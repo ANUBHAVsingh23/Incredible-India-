@@ -1,0 +1,253 @@
+
+[
+  {
+    "id": "diwali",
+    "name": "Diwali",
+    "state": "Across India",
+    "category": "Religious",
+    "season": "Autumn",
+    "month": "October-November",
+    "description": "The festival of lights celebrates the victory of light over darkness and good over evil. Homes are decorated with diyas, rangoli and lights.",
+    "image": "../assets/images/diwali.jpg"
+  },
+  {
+    "id": "holi",
+    "name": "Holi",
+    "state": "Across India",
+    "category": "Cultural",
+    "season": "Spring",
+    "month": "March",
+    "description": "The festival of colours celebrates the arrival of spring through colours, music, dance and community celebrations.",
+    "image": "../assets/images/holi.jfif"
+  },
+  {
+    "id": "durga-puja",
+    "name": "Durga Puja",
+    "state": "West Bengal",
+    "category": "Religious",
+    "season": "Autumn",
+    "month": "September-October",
+    "description": "A grand celebration honouring Goddess Durga, famous for artistic pandals, traditional rituals, music and cultural performances.",
+    "image": "../assets/images/durgapuja.jfif"
+  },
+  {
+    "id": "ganesh-chaturthi",
+    "name": "Ganesh Chaturthi",
+    "state": "Maharashtra",
+    "category": "Religious",
+    "season": "Monsoon",
+    "month": "August-September",
+    "description": "A festival celebrating Lord Ganesha with beautifully decorated idols, prayers, music and community processions.",
+    "image": "../assets/images/ganeshchaturthi.jfif"
+  },
+  {
+    "id": "navratri",
+    "name": "Navratri",
+    "state": "Gujarat",
+    "category": "Religious",
+    "season": "Autumn",
+    "month": "September-October",
+    "description": "Nine nights dedicated to Goddess Durga, celebrated with Garba, Dandiya Raas, traditional clothing and devotional music.",
+    "image": "../assets/images/navratrii.jfif"
+  },
+  {
+    "id": "baisakhi",
+    "name": "Baisakhi",
+    "state": "Punjab",
+    "category": "Harvest",
+    "season": "Spring",
+    "month": "April",
+    "description": "A major Punjabi harvest festival marking the beginning of the harvest season, celebrated with Bhangra, Giddha and community gatherings.",
+    "image": "../assets/images/baisakhii.jfif"
+  },
+  {
+    "id": "lohri",
+    "name": "Lohri",
+    "state": "Punjab",
+    "category": "Harvest",
+    "season": "Winter",
+    "month": "January",
+    "description": "A winter harvest celebration featuring bonfires, folk songs, traditional dances, peanuts, popcorn and rewri.",
+    "image": "../assets/images/lohrii.jfif"
+  },
+  {
+    "id": "onam",
+    "name": "Onam",
+    "state": "Kerala",
+    "category": "Harvest",
+    "season": "Monsoon",
+    "month": "August-September",
+    "description": "Kerala's major harvest festival, celebrated with flower carpets, traditional feasts, boat races and cultural performances.",
+    "image": "../assets/images/onamm.jfif"
+  },
+  {
+    "id": "pongal",
+    "name": "Pongal",
+    "state": "Tamil Nadu",
+    "category": "Harvest",
+    "season": "Winter",
+    "month": "January",
+    "description": "A four-day Tamil harvest festival expressing gratitude to the Sun, cattle and nature for a successful harvest.",
+    "image": "../assets/images/pongall.jfif"
+  },
+  {
+    "id": "bihu",
+    "name": "Bihu",
+    "state": "Assam",
+    "category": "Harvest",
+    "season": "Spring",
+    "month": "April",
+    "description": "Rongali Bihu marks the Assamese New Year and the agricultural season with traditional Bihu dance, songs and celebrations.",
+    "image": "../assets/images/bihuu.jfif"
+  },
+  {
+    "id": "hornbill-festival",
+    "name": "Hornbill Festival",
+    "state": "Nagaland",
+    "category": "Cultural",
+    "season": "Winter",
+    "month": "December",
+    "description": "A vibrant festival showcasing the traditions, music, dances, crafts and cuisines of Nagaland's diverse Naga tribes.",
+    "image": "../assets/images/hornbillfestival.jpg"
+  },
+  {
+    "id": "losar",
+    "name": "Losar",
+    "state": "Ladakh",
+    "category": "Cultural",
+    "season": "Winter",
+    "month": "December-February",
+    "description": "The Tibetan Buddhist New Year, celebrated with prayers, traditional dances, family gatherings and monastery ceremonies.",
+    "image": "../assets/images/losarr.jfif"
+  },
+  {
+    "id": "tawang-festival",
+    "name": "Tawang Festival",
+    "state": "Arunachal Pradesh",
+    "category": "Cultural",
+    "season": "Autumn",
+    "month": "October",
+    "description": "A celebration of Monpa culture featuring traditional dances, local food, handicrafts and cultural performances.",
+    "image": "../assets/images/tawangfestival.jfif"
+  },
+  {
+    "id": "chapchar-kut",
+    "name": "Chapchar Kut",
+    "state": "Mizoram",
+    "category": "Cultural",
+    "season": "Spring",
+    "month": "March",
+    "description": "A traditional Mizo spring festival celebrated with the Cheraw bamboo dance, folk music and community festivities.",
+    "image": "../assets/images/chapcharkut.jfif"
+  },
+  {
+    "id": "wangala",
+    "name": "Wangala Festival",
+    "state": "Meghalaya",
+    "category": "Harvest",
+    "season": "Autumn",
+    "month": "November",
+    "description": "The Garo harvest festival, also called the Hundred Drums Festival, celebrates the Sun God with rhythmic drums and traditional dances.",
+    "image": "../assets/images/wangalaa.jfif"
+  },
+  {
+    "id": "rajasthan-desert-festival",
+    "name": "Desert Festival",
+    "state": "Rajasthan",
+    "category": "Cultural",
+    "season": "Winter",
+    "month": "February",
+    "description": "A colourful celebration of Rajasthani heritage featuring folk music, Kalbelia dance, camel events and traditional costumes.",
+    "image": "../assets/images/rajasthandesertfestival.jfif"
+  },
+  {
+    "id": "pushkar-fair",
+    "name": "Pushkar Camel Fair",
+    "state": "Rajasthan",
+    "category": "Cultural",
+    "season": "Autumn",
+    "month": "October-November",
+    "description": "A famous annual fair combining livestock trading, traditional performances, competitions and religious activities.",
+    "image": "../assets/images/pushkarfair.jfif"
+  },
+  {
+    "id": "jagannath-rath-yatra",
+    "name": "Jagannath Rath Yatra",
+    "state": "Odisha",
+    "category": "Religious",
+    "season": "Monsoon",
+    "month": "June-July",
+    "description": "A major pilgrimage festival in Puri where Lord Jagannath, Balabhadra and Subhadra are carried in grand decorated chariots.",
+    "image": "../assets/images/jagannath-rath-yatra.jfif"
+  },
+  {
+    "id": "janmashtami",
+    "name": "Krishna Janmashtami",
+    "state": "Uttar Pradesh",
+    "category": "Religious",
+    "season": "Monsoon",
+    "month": "August",
+    "description": "Celebrates the birth of Lord Krishna, especially in Mathura and Vrindavan, with devotional songs, prayers and Dahi Handi events.",
+    "image": "../assets/images/janmashtamii.jfif"
+  },
+  {
+    "id": "chhath-puja",
+    "name": "Chhath Puja",
+    "state": "Bihar",
+    "category": "Religious",
+    "season": "Autumn",
+    "month": "October-November",
+    "description": "A traditional festival dedicated to the Sun God, involving offerings and prayers at rivers and water bodies during sunrise and sunset.",
+    "image": "../assets/images/chhath-pujaa.jfif"
+  },
+  {
+    "id": "ugadi",
+    "name": "Ugadi",
+    "state": "Andhra Pradesh",
+    "category": "New Year",
+    "season": "Spring",
+    "month": "March-April",
+    "description": "The Telugu New Year, celebrated with traditional food, festive decorations, prayers and the preparation of Ugadi Pachadi.",
+    "image": "../assets/images/ugadii.jfif"
+  },
+  {
+    "id": "gudi-padwa",
+    "name": "Gudi Padwa",
+    "state": "Maharashtra",
+    "category": "New Year",
+    "season": "Spring",
+    "month": "March-April",
+    "description": "The Marathi New Year, celebrated by raising decorated Gudi flags, preparing festive food and welcoming prosperity.",
+    "image": "../assets/images/gudi-padwaa.jfif"
+  },
+  {
+    "id": "vishu",
+    "name": "Vishu",
+    "state": "Kerala",
+    "category": "New Year",
+    "season": "Spring",
+    "month": "April",
+    "description": "A traditional Malayalam New Year celebration featuring Vishukkani arrangements, family gatherings and festive meals.",
+    "image": "../assets/images/vishuu.jfif"
+  },
+  {
+    "id": "mim-kut",
+    "name": "Mim Kut",
+    "state": "Mizoram",
+    "category": "Harvest",
+    "season": "Monsoon",
+    "month": "August-September",
+    "description": "A traditional Mizo festival associated with the maize harvest, remembered through community gatherings and offerings.",
+    "image": "../assets/images/mim-kutt.jfif"
+  },
+  {
+    "id": "kharchi-puja",
+    "name": "Kharchi Puja",
+    "state": "Tripura",
+    "category": "Religious",
+    "season": "Monsoon",
+    "month": "June-July",
+    "description": "A significant Tripuri religious festival involving worship of fourteen deities and traditional community celebrations.",
+    "image": "../assets/images/kharchi-pujaa.jfif"
+  }
+]

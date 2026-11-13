@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Discover India's linguistic diversity, regional languages, scripts and cultural heritage.">
+
+    <title>Languages of India | Incredible India</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <style>
+        .page-hero {
+            padding: 90px 8% 70px;
+            text-align: center;
+            background:
+                linear-gradient(rgba(245, 247, 244, .84), rgba(245, 247, 244, .93)),
+                url("../assets/images/taj-mahall.jfif") center/cover;
+        }
+
+        .page-hero .eyebrow {
+            color: var(--gold);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: .85rem;
+        }
+
+        .page-hero h1 {
+            color: var(--gold-light);
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin: 15px 0;
+        }
+
+        .page-hero p {
+            max-width: 720px;
+            margin: auto;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .languages-section {
+            padding: 60px 8%;
+        }
+
+        .languages-intro {
+            max-width: 850px;
+            margin-bottom: 35px;
+        }
+
+        .languages-intro h2 {
+            color: var(--gold-light);
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+
+        .languages-intro p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .languages-toolbar {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .languages-toolbar input,
+        .languages-toolbar select {
+            width: 100%;
+            padding: 14px 16px;
+            border-radius: 8px;
+            border: 1px solid rgba(212, 175, 55, .3);
+            background: var(--bg-surface);
+            color: var(--text-primary);
+            outline: none;
+            font: inherit;
+        }
+
+        .languages-toolbar input:focus,
+        .languages-toolbar select:focus {
+            border-color: var(--gold);
+        }
+
+        .languages-toolbar select option {
+            background: var(--bg-surface);
+            color: var(--text-primary);
+        }
+
+        .languages-result {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .languages-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 25px;
+        }
+
+        .language-card {
+            padding: 25px;
+            background: var(--bg-surface);
+            border: 1px solid rgba(212, 175, 55, .16);
+            border-radius: 14px;
+            transition: transform .3s ease, border-color .3s ease;
+        }
+
+        .language-card:hover {
+            transform: translateY(-7px);
+            border-color: var(--gold);
+        }
+
+        .language-symbol {
+            width: 55px;
+            height: 55px;
+            display: grid;
+            place-items: center;
+            border-radius: 12px;
+            background: rgba(212, 175, 55, .12);
+            color: var(--gold-light);
+            font-size: 1.7rem;
+            margin-bottom: 18px;
+        }
+
+        .language-family {
+            color: var(--gold);
+            font-size: .78rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .language-card h3 {
+            color: var(--gold-light);
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+
+        .language-card p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            font-size: .92rem;
+            margin-bottom: 10px;
+        }
+
+        .language-card strong {
+            color: var(--text-primary);
+        }
+
+        .language-youtube-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 10px;
+            padding: 9px 14px;
+            border: 1px solid #c4302b;
+            border-radius: 999px;
+            color: #a51f1b;
+            font-size: .88rem;
+            font-weight: 700;
+            transition: color .2s ease, background-color .2s ease, transform .2s ease;
+        }
+
+        .language-youtube-link:hover,
+        .language-youtube-link:focus-visible {
+            color: #fff;
+            background: #c4302b;
+            transform: translateY(-2px);
+        }
+
+        .empty-state {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 50px 20px;
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 768px) {
+            .languages-section {
+                padding: 40px 6%;
+            }
+
+            .languages-toolbar {
+                grid-template-columns: 1fr;
+            }
+
+            .page-hero {
+                padding: 70px 6%;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .languages-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .languages-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="../css/landing-heroes.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="../index.html" class="brand">
+                <span class="brand-icon">✦</span>
+                <span>INCREDIBLE INDIA</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <nav class="navigation" id="navigation">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="states.html" class="nav-link">States</a>
+                <a href="festivals.html" class="nav-link">Festivals</a>
+                <a href="food.html" class="nav-link">Food</a>
+                <a href="art-culture.html" class="nav-link">Art &amp; Culture</a>
+                <a href="historical-places.html" class="nav-link">Heritage</a>
+                <a href="languages.html" class="nav-link">Languages</a>
+                <a href="personalities.html" class="nav-link">Personalities</a>
+                <a href="about-india.html" class="nav-link">About India</a>
+                <a href="about-project.html" class="nav-link">About Project</a>
+            </nav>
+            <a href="../index.html#explore-map" class="header-button">Explore India ↗</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="page-hero page-hero--languages">
+            <span class="eyebrow">Voices • Scripts • Identity</span>
+
+            <h1>Languages of India</h1>
+
+            <p>
+                Discover the extraordinary linguistic diversity of India.
+                Explore languages, scripts, language families and the
+                cultural identities they preserve across generations.
+            </p>
+        </section>
+
+        <!-- Languages Directory -->
+        <section class="languages-section">
+
+            <div class="languages-intro">
+                <h2>Many Languages, One Incredible India</h2>
+
+                <p>
+                    India's languages reflect its history, geography and
+                    cultural diversity. Explore the languages spoken across
+                    different regions and discover their unique scripts
+                    and linguistic roots.
+                </p>
+            </div>
+
+            <div class="languages-toolbar">
+
+                <input
+                    type="search"
+                    id="languagesSearch"
+                    placeholder="Search languages, scripts or states..."
+                    aria-label="Search languages"
+                >
+
+                <select
+                    id="languagesRegionFilter"
+                    aria-label="Filter by region"
+                >
+                    <option value="">All Regions</option>
+                </select>
+
+                <select
+                    id="languagesFamilyFilter"
+                    aria-label="Filter by language family"
+                >
+                    <option value="">All Language Families</option>
+                </select>
+
+            </div>
+
+            <p class="languages-result" id="languagesResult">
+                Loading languages...
+            </p>
+
+            <div class="languages-grid" id="languagesContainer">
+                <!-- Language cards generated by JavaScript -->
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>✦ INCREDIBLE INDIA</h2>
+                <p>
+                    Celebrating India's culture, heritage,
+                    history and diversity through technology.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Explore</h3>
+                <a href="states.html">States</a>
+                <a href="festivals.html">Festivals</a>
+                <a href="food.html">Indian Food</a>
+                <a href="art-culture.html">Art &amp; Culture</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Discover</h3>
+                <a href="historical-places.html">Historical Places</a>
+                <a href="languages.html">Languages</a>
+                <a href="personalities.html">Personalities</a>
+                <a href="about-project.html">About Project</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Incredible India – 3D Cultural Explorer. Made with ❤️ for India.</p>
+        </div>
+    </footer>
+
+    <script src="../js/directory.js"></script>
+    <script type="module" src="../js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,303 @@
+
+[
+  {
+    "id": "sarson-da-saag",
+    "name": "Sarson da Saag and Makki di Roti",
+    "state": "Punjab",
+    "category": "Main Course",
+    "foodType": "Vegetarian",
+    "description": "A traditional Punjabi winter meal made with mustard greens and served with cornmeal flatbread, butter and jaggery.",
+    "ingredients": ["Mustard Greens", "Spinach", "Cornmeal", "Ginger", "Butter"],
+    "image": "../assets/images/sarson-da-saag.jfif"
+  },
+  {
+    "id": "chole-bhature",
+    "name": "Chole Bhature",
+    "state": "Punjab",
+    "category": "Main Course",
+    "foodType": "Vegetarian",
+    "description": "Spiced chickpea curry served with fluffy deep-fried bread, popular across Punjab and North India.",
+    "ingredients": ["Chickpeas", "Flour", "Onion", "Tomato", "Spices"],
+    "image": "../assets/images/chole-bhature.jfif"
+  },
+  {
+    "id": "dal-baati-churma",
+    "name": "Dal Baati Churma",
+    "state": "Rajasthan",
+    "category": "Main Course",
+    "foodType": "Vegetarian",
+    "description": "A traditional Rajasthani combination of baked wheat balls, lentil curry and sweet churma.",
+    "ingredients": ["Wheat Flour", "Lentils", "Ghee", "Jaggery", "Spices"],
+    "image": "../assets/images/dal-baati-churma.jfif"
+  },
+  {
+    "id": "gatte-ki-sabzi",
+    "name": "Gatte ki Sabzi",
+    "state": "Rajasthan",
+    "category": "Main Course",
+    "foodType": "Vegetarian",
+    "description": "Gram flour dumplings cooked in a spiced yoghurt-based curry.",
+    "ingredients": ["Gram Flour", "Yoghurt", "Chilli", "Turmeric", "Spices"],
+    "image": "../assets/images/gatte-ki-sabzi.jfif"
+  },
+  {
+    "id": "dhokla",
+    "name": "Dhokla",
+    "state": "Gujarat",
+    "category": "Snack",
+    "foodType": "Vegetarian",
+    "description": "A soft and fluffy steamed savoury cake made from fermented gram flour batter.",
+    "ingredients": ["Gram Flour", "Yoghurt", "Mustard Seeds", "Green Chilli"],
+    "image": "../assets/images/dhokla.jfif"
+  },
+  {
+    "id": "undhiyu",
+    "name": "Undhiyu",
+    "state": "Gujarat",
+    "category": "Main Course",
+    "foodType": "Vegetarian",
+    "description": "A traditional mixed vegetable preparation featuring seasonal produce and aromatic spices.",
+    "ingredients": ["Seasonal Vegetables", "Methi", "Coconut", "Spices"],
+    "image": "../assets/images/undhiyu.jfif"
+  },
+  {
+    "id": "vada-pav",
+    "name": "Vada Pav",
+    "state": "Maharashtra",
+    "category": "Street Food",
+    "foodType": "Vegetarian",
+    "description": "A popular Mumbai street-food sandwich featuring a spiced potato fritter inside a bread roll.",
+    "ingredients": ["Potato", "Bread Roll", "Gram Flour", "Garlic Chutney"],
+    "image": "../assets/images/vada-pav.jfif"
+  },
+  {
+    "id": "puran-poli",
+    "name": "Puran Poli",
+    "state": "Maharashtra",
+    "category": "Dessert",
+    "foodType": "Vegetarian",
+    "description": "A sweet flatbread stuffed with a filling of cooked lentils, jaggery and cardamom.",
+    "ingredients": ["Chana Dal", "Jaggery", "Wheat Flour", "Cardamom"],
+    "image": "../assets/images/puran-poli.jfif"
+  },
+  {
+    "id": "masala-dosa",
+    "name": "Masala Dosa",
+    "state": "Karnataka",
+    "category": "Breakfast",
+    "foodType": "Vegetarian",
+    "description": "A crisp fermented rice and lentil crepe filled with seasoned potato masala.",
+    "ingredients": ["Rice", "Urad Dal", "Potato", "Mustard Seeds"],
+    "image": "../assets/images/masala-dosa.jfif"
+  },
+  {
+    "id": "bisi-bele-bath",
+    "name": "Bisi Bele Bath",
+    "state": "Karnataka",
+    "category": "Main Course",
+    "foodType": "Vegetarian",
+    "description": "A flavourful one-pot preparation of rice, lentils, vegetables and a distinctive spice blend.",
+    "ingredients": ["Rice", "Toor Dal", "Vegetables", "Tamarind", "Spices"],
+    "image": "../assets/images/bisi-bele-bath.jfif"
+  },
+  {
+    "id": "appam-stew",
+    "name": "Appam with Vegetable Stew",
+    "state": "Kerala",
+    "category": "Breakfast",
+    "foodType": "Vegetarian",
+    "description": "Soft fermented rice pancakes served with a gently spiced coconut milk vegetable stew.",
+    "ingredients": ["Rice", "Coconut Milk", "Vegetables", "Curry Leaves"],
+    "image": "../assets/images/appam-stew.jfif"
+  },
+  {
+    "id": "puttu-kadala",
+    "name": "Puttu and Kadala Curry",
+    "state": "Kerala",
+    "category": "Breakfast",
+    "foodType": "Vegetarian",
+    "description": "Steamed cylindrical rice cakes served with a black chickpea curry.",
+    "ingredients": ["Rice Flour", "Coconut", "Black Chickpeas", "Spices"],
+    "image": "../assets/images/puttu-kadala.jfif"
+  },
+  {
+    "id": "hyderabadi-biryani",
+    "name": "Hyderabadi Biryani",
+    "state": "Telangana",
+    "category": "Main Course",
+    "foodType": "Non-Vegetarian",
+    "description": "An aromatic rice preparation traditionally layered with marinated meat, saffron and spices.",
+    "ingredients": ["Basmati Rice", "Meat", "Yoghurt", "Saffron", "Spices"],
+    "image": "../assets/images/hyderabadi-biryani.jfif"
+  },
+  {
+    "id": "sarva-pindi",
+    "name": "Sarva Pindi",
+    "state": "Telangana",
+    "category": "Snack",
+    "foodType": "Vegetarian",
+    "description": "A savoury rice-flour pancake prepared with peanuts, sesame seeds, chillies and spices.",
+    "ingredients": ["Rice Flour", "Peanuts", "Sesame Seeds", "Green Chilli"],
+    "image": "../assets/images/sarva-pindi.jfif"
+  },
+  {
+    "id": "idli-sambar",
+    "name": "Idli and Sambar",
+    "state": "Tamil Nadu",
+    "category": "Breakfast",
+    "foodType": "Vegetarian",
+    "description": "Steamed fermented rice cakes served with lentil and vegetable sambar.",
+    "ingredients": ["Rice", "Urad Dal", "Toor Dal", "Vegetables"],
+    "image": "../assets/images/idli-sambar.jfif"
+  },
+  {
+    "id": "chettinad-chicken",
+    "name": "Chettinad Chicken",
+    "state": "Tamil Nadu",
+    "category": "Main Course",
+    "foodType": "Non-Vegetarian",
+    "description": "A richly spiced chicken preparation associated with the Chettinad region.",
+    "ingredients": ["Chicken", "Pepper", "Fennel", "Coconut", "Spices"],
+    "image": "../assets/images/chettinad-chicken.jfif"
+  },
+  {
+    "id": "litti-chokha",
+    "name": "Litti Chokha",
+    "state": "Bihar",
+    "category": "Main Course",
+    "foodType": "Vegetarian",
+    "description": "Roasted wheat dough balls stuffed with sattu, served with mashed roasted vegetables.",
+    "ingredients": ["Wheat Flour", "Sattu", "Brinjal", "Tomato", "Mustard Oil"],
+    "image": "../assets/images/litti-chokha.jfif"
+  },
+  {
+    "id": "atheku",
+    "name": "Thekua",
+    "state": "Bihar",
+    "category": "Dessert",
+    "foodType": "Vegetarian",
+    "description": "A traditional deep-fried sweet made with wheat flour and jaggery, especially associated with Chhath Puja.",
+    "ingredients": ["Wheat Flour", "Jaggery", "Ghee", "Cardamom"],
+    "image": "../assets/images/thekua.jfif"
+  },
+  {
+    "id": "machher-jhol",
+    "name": "Machher Jhol",
+    "state": "West Bengal",
+    "category": "Main Course",
+    "foodType": "Non-Vegetarian",
+    "description": "A traditional Bengali fish curry prepared with potatoes, turmeric and aromatic spices.",
+    "ingredients": ["Fish", "Potato", "Turmeric", "Mustard Oil"],
+    "image": "../assets/images/machher-jhol.jfif"
+  },
+  {
+    "id": "rosogolla",
+    "name": "Rosogolla",
+    "state": "West Bengal",
+    "category": "Dessert",
+    "foodType": "Vegetarian",
+    "description": "Soft cheese-based balls cooked in light sugar syrup, famous in Bengali sweet-making traditions.",
+    "ingredients": ["Chhena", "Sugar", "Water"],
+    "image": "../assets/images/rosogolla.jfif"
+  },
+  {
+    "id": "dalma",
+    "name": "Dalma",
+    "state": "Odisha",
+    "category": "Main Course",
+    "foodType": "Vegetarian",
+    "description": "A traditional Odia dish of lentils cooked with vegetables and mild spices.",
+    "ingredients": ["Toor Dal", "Papaya", "Pumpkin", "Raw Banana", "Spices"],
+    "image": "../assets/images/dalma.jfif"
+  },
+  {
+    "id": "chhena-poda",
+    "name": "Chhena Poda",
+    "state": "Odisha",
+    "category": "Dessert",
+    "foodType": "Vegetarian",
+    "description": "A baked cheese dessert with a caramelised exterior and soft interior.",
+    "ingredients": ["Chhena", "Sugar", "Cardamom", "Semolina"],
+    "image": "../assets/images/chhena-poda.jfif"
+  },
+  {
+    "id": "dhuska",
+    "name": "Dhuska",
+    "state": "Jharkhand",
+    "category": "Snack",
+    "foodType": "Vegetarian",
+    "description": "A deep-fried savoury snack made from a rice and lentil batter.",
+    "ingredients": ["Rice", "Chana Dal", "Urad Dal", "Spices"],
+    "image": "../assets/images/dhuska.jfif"
+  },
+  {
+    "id": "bafla",
+    "name": "Dal Bafla",
+    "state": "Madhya Pradesh",
+    "category": "Main Course",
+    "foodType": "Vegetarian",
+    "description": "A regional preparation of baked or boiled wheat dough balls served with rich lentil curry.",
+    "ingredients": ["Wheat Flour", "Toor Dal", "Ghee", "Spices"],
+    "image": "../assets/images/bafla.jfif"
+  },
+  {
+    "id": "goan-fish-curry",
+    "name": "Goan Fish Curry",
+    "state": "Goa",
+    "category": "Main Course",
+    "foodType": "Non-Vegetarian",
+    "description": "A coastal curry combining fish, coconut, tamarind and Goan spices.",
+    "ingredients": ["Fish", "Coconut", "Tamarind", "Red Chillies"],
+    "image": "../assets/images/goan-fish-curry.jfif"
+  },
+  {
+    "id": "bamboo-shoot-pork",
+    "name": "Bamboo Shoot Pork",
+    "state": "Nagaland",
+    "category": "Main Course",
+    "foodType": "Non-Vegetarian",
+    "description": "A traditional Naga preparation combining pork with fermented or fresh bamboo shoots.",
+    "ingredients": ["Pork", "Bamboo Shoots", "Ginger", "Chilli"],
+    "image": "../assets/images/bamboo-shoot-pork.jfif"
+  },
+  {
+    "id": "momos",
+    "name": "Momos",
+    "state": "Sikkim",
+    "category": "Snack",
+    "foodType": "Vegetarian",
+    "description": "Steamed dumplings filled with vegetables or meat, widely enjoyed across the Himalayan region.",
+    "ingredients": ["Flour", "Cabbage", "Carrot", "Ginger"],
+    "image": "../assets/images/momos.jfif"
+  },
+  {
+    "id": "assam-laksa",
+    "name": "Masor Tenga",
+    "state": "Assam",
+    "category": "Main Course",
+    "foodType": "Non-Vegetarian",
+    "description": "A light and tangy Assamese fish curry traditionally flavoured with souring ingredients.",
+    "ingredients": ["Fish", "Tomato", "Lemon", "Herbs"],
+    "image": "../assets/images/assam-laksa.jfif"
+  },
+  {
+    "id": "meghalaya-jadoh",
+    "name": "Jadoh",
+    "state": "Meghalaya",
+    "category": "Main Course",
+    "foodType": "Non-Vegetarian",
+    "description": "A traditional Khasi rice dish commonly cooked with meat and aromatic local spices.",
+    "ingredients": ["Rice", "Pork", "Ginger", "Local Spices"],
+    "image": "../assets/images/meghalaya-jadoh.jfif"
+  },
+  {
+    "id": "manipur-eronba",
+    "name": "Eromba",
+    "state": "Manipur",
+    "category": "Main Course",
+    "foodType": "Vegetarian",
+    "description": "A traditional Manipuri preparation of boiled vegetables mashed with fermented fish; vegetarian variations are also made.",
+    "ingredients": ["Vegetables", "Chilli", "Fermented Fish"],
+    "image": "../assets/images/manipur-eronba.jfif"
+  }
+]

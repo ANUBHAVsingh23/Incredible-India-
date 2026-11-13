@@ -1,0 +1,303 @@
+
+[
+  {
+    "id": "mahatma-gandhi",
+    "image": "../assets/images/mahatmagandhi.jfif",
+    "name": "Mahatma Gandhi",
+    "state": "Gujarat",
+    "category": "Freedom Fighters",
+    "profession": "Leader and social reformer",
+    "knownFor": "Leading India's non-violent freedom movement",
+    "description": "Mohandas Karamchand Gandhi played a central role in India's independence movement through the principles of truth, non-violence and civil disobedience."
+  },
+  {
+    "id": "bhagat-singh",
+    "image": "../assets/images/bhagat-singh.jfif",
+    "name": "Bhagat Singh",
+    "state": "Punjab",
+    "category": "Freedom Fighters",
+    "profession": "Revolutionary freedom fighter",
+    "knownFor": "His contribution to India's revolutionary independence movement",
+    "description": "Bhagat Singh became one of India's most remembered revolutionary figures through his courage, writings and resistance to British colonial rule."
+  },
+  {
+    "id": "subhas-chandra-bose",
+    "image": "../assets/images/subhas-chandra-bose.jfif",
+    "name": "Subhas Chandra Bose",
+    "state": "Odisha",
+    "category": "Freedom Fighters",
+    "profession": "Nationalist leader",
+    "knownFor": "Leading the Indian National Army",
+    "description": "Popularly known as Netaji, he organised the Indian National Army and advocated armed resistance against British rule."
+  },
+  {
+    "id": "rani-lakshmibai",
+    "image": "../assets/images/rani-lakshmibai.jfif",
+    "name": "Rani Lakshmibai",
+    "state": "Uttar Pradesh",
+    "category": "Freedom Fighters",
+    "profession": "Queen and freedom fighter",
+    "knownFor": "Her leadership during the Revolt of 1857",
+    "description": "The Queen of Jhansi became a symbol of resistance during the Indian Rebellion of 1857."
+  },
+  {
+    "id": "sardar-patel",
+    "image": "../assets/images/sardar-patel.jfif",
+    "name": "Sardar Vallabhbhai Patel",
+    "state": "Gujarat",
+    "category": "Political Leaders",
+    "profession": "Statesman and freedom fighter",
+    "knownFor": "Integration of princely states into independent India",
+    "description": "Independent India's first Deputy Prime Minister and Home Minister, remembered for his major role in national integration."
+  },
+  {
+    "id": "jawaharlal-nehru",
+    "image": "../assets/images/jawaharlal-nehru.jfif",
+    "name": "Jawaharlal Nehru",
+    "state": "Uttar Pradesh",
+    "category": "Political Leaders",
+    "profession": "Statesman and writer",
+    "knownFor": "Becoming India's first Prime Minister",
+    "description": "A prominent leader of the independence movement who served as India's first Prime Minister from 1947 to 1964."
+  },
+  {
+    "id": "dr-b-r-ambedkar",
+    "image": "../assets/images/dr-b-r-ambedkar.jfif",
+    "name": "Dr. B. R. Ambedkar",
+    "state": "Madhya Pradesh",
+    "category": "Social Reformers",
+    "profession": "Jurist, economist and social reformer",
+    "knownFor": "Chairing the Constitution's Drafting Committee",
+    "description": "A leading architect of the Indian Constitution who campaigned for social equality, education and the rights of disadvantaged communities."
+  },
+  {
+    "id": "savitribai-phule",
+    "image": "../assets/images/savitribai-phule.jfif",
+    "name": "Savitribai Phule",
+    "state": "Maharashtra",
+    "category": "Social Reformers",
+    "profession": "Educator and social reformer",
+    "knownFor": "Pioneering women's education in India",
+    "description": "One of India's earliest modern women teachers, she worked to expand education for girls and marginalised communities."
+  },
+  {
+    "id": "a-p-j-abdul-kalam",
+    "image": "../assets/images/a-p-j-abdul-kalam.jfif",
+    "name": "Dr. A. P. J. Abdul Kalam",
+    "state": "Tamil Nadu",
+    "category": "Scientists",
+    "profession": "Aerospace scientist and former President",
+    "knownFor": "India's missile and space programmes",
+    "description": "Known as the Missile Man of India, he served as the country's 11th President and inspired generations through science and education."
+  },
+  {
+    "id": "c-v-raman",
+    "image": "../assets/images/c-v-raman.jfif",
+    "name": "C. V. Raman",
+    "state": "Tamil Nadu",
+    "category": "Scientists",
+    "profession": "Physicist",
+    "knownFor": "Discovering the Raman Effect",
+    "description": "Indian physicist who received the 1930 Nobel Prize in Physics for his work on the scattering of light."
+  },
+  {
+    "id": "jagdish-chandra-bose",
+    "image": "../assets/images/jagdish-chandra-bose.jfif",
+    "name": "Jagadish Chandra Bose",
+    "state": "West Bengal",
+    "category": "Scientists",
+    "profession": "Physicist and biologist",
+    "knownFor": "Research in radio waves and plant physiology",
+    "description": "A pioneering scientist whose research contributed to radio science and the study of plant responses."
+  },
+  {
+    "id": "homi-bhabha",
+    "image": "../assets/images/homi-bhabha.jfif",
+    "name": "Homi J. Bhabha",
+    "state": "Maharashtra",
+    "category": "Scientists",
+    "profession": "Nuclear physicist",
+    "knownFor": "Founding India's modern nuclear research programme",
+    "description": "A key figure in establishing India's atomic energy research institutions and scientific infrastructure."
+  },
+  {
+    "id": "srinivasa-ramanujan",
+    "image": "../assets/images/srinivasa-ramanujan.jfif",
+    "name": "Srinivasa Ramanujan",
+    "state": "Tamil Nadu",
+    "category": "Scientists",
+    "profession": "Mathematician",
+    "knownFor": "Groundbreaking contributions to number theory",
+    "description": "A remarkable mathematician whose work in number theory, infinite series and mathematical analysis influenced modern mathematics."
+  },
+  {
+    "id": "aryabhata",
+    "image": "../assets/images/aryabhata.jfif",
+    "name": "Aryabhata",
+    "state": "Bihar",
+    "category": "Scientists",
+    "profession": "Mathematician and astronomer",
+    "knownFor": "Aryabhatiya and early mathematical astronomy",
+    "description": "An influential ancient Indian scholar known for important work in mathematics and astronomy, including approximations of pi."
+  },
+  {
+    "id": "rabindranath-tagore",
+    "image": "../assets/images/rabindranath-tagore.jfif",
+    "name": "Rabindranath Tagore",
+    "state": "West Bengal",
+    "category": "Literature",
+    "profession": "Poet, writer and philosopher",
+    "knownFor": "Winning the Nobel Prize in Literature in 1913",
+    "description": "A celebrated Bengali writer and composer who became the first non-European Nobel laureate in Literature."
+  },
+  {
+    "id": "munshi-premchand",
+    "image": "../assets/images/munshi-premchand.jfif",
+    "name": "Munshi Premchand",
+    "state": "Uttar Pradesh",
+    "category": "Literature",
+    "profession": "Novelist and short-story writer",
+    "knownFor": "Realistic Hindi and Urdu literature",
+    "description": "A major Indian literary figure whose stories and novels explored social inequality, rural life and human struggles."
+  },
+  {
+    "id": "sarojini-naidu",
+    "image": "../assets/images/sarojini-naidu.jfif",
+    "name": "Sarojini Naidu",
+    "state": "Uttar Pradesh",
+    "category": "Literature",
+    "profession": "Poet and freedom fighter",
+    "knownFor": "Her poetry and role in the independence movement",
+    "description": "Known as the Nightingale of India, she was a prominent poet, political leader and advocate for women's rights."
+  },
+  {
+    "id": "r-k-narayan",
+    "image": "../assets/images/r-k-narayan.jfif",
+    "name": "R. K. Narayan",
+    "state": "Tamil Nadu",
+    "category": "Literature",
+    "profession": "Novelist and writer",
+    "knownFor": "Creating the fictional town of Malgudi",
+    "description": "A renowned English-language Indian author whose works portrayed everyday life in the fictional South Indian town of Malgudi."
+  },
+  {
+    "id": "amrita-pritam",
+    "image": "../assets/images/amrita-pritam.jfif",
+    "name": "Amrita Pritam",
+    "state": "Punjab",
+    "category": "Literature",
+    "profession": "Poet and novelist",
+    "knownFor": "Her Punjabi poetry and novel Pinjar",
+    "description": "A celebrated Punjabi writer whose emotionally powerful works explored love, identity, partition and women's experiences."
+  },
+  {
+    "id": "lata-mangeshkar",
+    "image": "../assets/images/lata-mangeshkar.jfif",
+    "name": "Lata Mangeshkar",
+    "state": "Madhya Pradesh",
+    "category": "Music",
+    "profession": "Playback singer",
+    "knownFor": "Her extraordinary contribution to Indian film music",
+    "description": "One of India's most iconic playback singers, whose career spanned several decades and numerous Indian languages."
+  },
+  {
+    "id": "m-s-subbulakshmi",
+    "image": "../assets/images/m-s-subbulakshmi.jfif",
+    "name": "M. S. Subbulakshmi",
+    "state": "Tamil Nadu",
+    "category": "Music",
+    "profession": "Carnatic vocalist",
+    "knownFor": "Her contribution to Indian classical music",
+    "description": "An internationally respected Carnatic vocalist and the first musician to receive the Bharat Ratna."
+  },
+  {
+    "id": "bhimsen-joshi",
+    "image": "../assets/images/bhimsen-joshi.jfif",
+    "name": "Bhimsen Joshi",
+    "state": "Karnataka",
+    "category": "Music",
+    "profession": "Hindustani classical vocalist",
+    "knownFor": "His powerful khayal singing",
+    "description": "A leading exponent of the Kirana gharana, celebrated for his expressive voice and contribution to Hindustani classical music."
+  },
+  {
+    "id": "satyajit-ray",
+    "image": "../assets/images/satyajit-ray.jfif",
+    "name": "Satyajit Ray",
+    "state": "West Bengal",
+    "category": "Arts and Cinema",
+    "profession": "Film director and writer",
+    "knownFor": "The Apu Trilogy and Indian cinema",
+    "description": "An internationally acclaimed filmmaker whose humanistic storytelling transformed Indian cinema."
+  },
+  {
+    "id": "m-f-husain",
+    "image": "../assets/images/m-f-husain.jfif",
+    "name": "M. F. Husain",
+    "state": "Maharashtra",
+    "category": "Arts and Cinema",
+    "profession": "Painter",
+    "knownFor": "Modern Indian art and expressive paintings",
+    "description": "A prominent modern Indian artist recognised for bold lines, vivid colours and distinctive figurative paintings."
+  },
+  {
+    "id": "ravi-shankar",
+    "image": "../assets/images/ravi-shankar.jfif",
+    "name": "Pandit Ravi Shankar",
+    "state": "Uttar Pradesh",
+    "category": "Music",
+    "profession": "Sitar maestro and composer",
+    "knownFor": "Popularising Indian classical music internationally",
+    "description": "An influential sitar virtuoso who introduced many international audiences to Hindustani classical music."
+  },
+  {
+    "id": "dhyan-chand",
+    "image": "../assets/images/dhyan-chand.jfif",
+    "name": "Major Dhyan Chand",
+    "state": "Uttar Pradesh",
+    "category": "Sports",
+    "profession": "Field hockey player",
+    "knownFor": "His extraordinary achievements in Olympic hockey",
+    "description": "One of India's greatest hockey players, remembered for his exceptional ball control and contribution to India's Olympic success."
+  },
+  {
+    "id": "sachin-tendulkar",
+    "image": "../assets/images/sachin-tendulkar.jfif",
+    "name": "Sachin Tendulkar",
+    "state": "Maharashtra",
+    "category": "Sports",
+    "profession": "Cricketer",
+    "knownFor": "Scoring 100 international centuries",
+    "description": "Widely regarded as one of cricket's greatest batters, he represented India internationally for more than two decades."
+  },
+  {
+    "id": "p-v-sindhu",
+    "image": "../assets/images/p-v-sindhu.jfif",
+    "name": "P. V. Sindhu",
+    "state": "Telangana",
+    "category": "Sports",
+    "profession": "Badminton player",
+    "knownFor": "Winning Olympic silver and bronze medals",
+    "description": "An internationally successful Indian badminton player and one of the country's leading Olympic medallists."
+  },
+  {
+    "id": "neeraj-chopra",
+    "image": "../assets/images/neeraj-chopra.jfif",
+    "name": "Neeraj Chopra",
+    "state": "Haryana",
+    "category": "Sports",
+    "profession": "Javelin thrower",
+    "knownFor": "Winning India's first Olympic athletics gold medal",
+    "description": "An Indian track-and-field athlete who won Olympic gold in javelin at Tokyo 2020 and silver at Paris 2024."
+  },
+  {
+    "id": "mary-kom",
+    "image": "../assets/images/mary-kom.jfif",
+    "name": "Mary Kom",
+    "state": "Manipur",
+    "category": "Sports",
+    "profession": "Boxer",
+    "knownFor": "Multiple world boxing championship titles and Olympic bronze",
+    "description": "A celebrated Indian boxer whose achievements made her an influential figure in Indian women's sport."
+  }
+]

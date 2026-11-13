@@ -1,0 +1,303 @@
+
+[
+  {
+    "id": "taj-mahal",
+    "name": "Taj Mahal",
+    "state": "Uttar Pradesh",
+    "location": "Agra",
+    "period": "17th Century",
+    "category": "Mughal Architecture",
+    "description": "A UNESCO World Heritage Site built by Emperor Shah Jahan in memory of Mumtaz Mahal. Famous for its white marble architecture and intricate craftsmanship.",
+    "image": "../assets/images/taj-mahall.jfif"
+  },
+  {
+    "id": "agra-fort",
+    "name": "Agra Fort",
+    "state": "Uttar Pradesh",
+    "location": "Agra",
+    "period": "16th Century",
+    "category": "Fort",
+    "description": "A magnificent red sandstone fort that served as an important residence of Mughal emperors.",
+    "image": "../assets/images/agra-fortt.jfif"
+  },
+  {
+    "id": "fatehpur-sikri",
+    "name": "Fatehpur Sikri",
+    "state": "Uttar Pradesh",
+    "location": "Near Agra",
+    "period": "16th Century",
+    "category": "Mughal Architecture",
+    "description": "A historic Mughal city founded by Emperor Akbar, known for its palaces, courtyards and Buland Darwaza.",
+    "image": "../assets/images/fatehpur-sikrii.jfif"
+  },
+  {
+    "id": "qutub-minar",
+    "name": "Qutub Minar",
+    "state": "Delhi",
+    "location": "Mehrauli, New Delhi",
+    "period": "12th–13th Century",
+    "category": "Monument",
+    "description": "A towering brick minaret and UNESCO World Heritage Site featuring Indo-Islamic architectural details.",
+    "image": "../assets/images/qutub-minarr.jfif"
+  },
+  {
+    "id": "red-fort",
+    "name": "Red Fort",
+    "state": "Delhi",
+    "location": "Old Delhi",
+    "period": "17th Century",
+    "category": "Fort",
+    "description": "A historic Mughal fort built by Shah Jahan. It is the site of India's annual Independence Day address.",
+    "image": "../assets/images/red-fortt.jfif"
+  },
+  {
+    "id": "humayun-tomb",
+    "name": "Humayun's Tomb",
+    "state": "Delhi",
+    "location": "Nizamuddin, New Delhi",
+    "period": "16th Century",
+    "category": "Mughal Architecture",
+    "description": "A grand garden tomb commissioned by Humayun's widow. Its design influenced later Mughal architecture.",
+    "image": "../assets/images/humayun-tombb.jfif"
+  },
+  {
+    "id": "amber-fort",
+    "name": "Amber Fort",
+    "state": "Rajasthan",
+    "location": "Amer, Jaipur",
+    "period": "16th Century",
+    "category": "Fort",
+    "description": "A hilltop fort known for its grand gateways, mirror work, courtyards and Rajput architecture.",
+    "image": "../assets/images/amber-fortt.jfif"
+  },
+  {
+    "id": "hawa-mahal",
+    "name": "Hawa Mahal",
+    "state": "Rajasthan",
+    "location": "Jaipur",
+    "period": "18th Century",
+    "category": "Palace",
+    "description": "The Palace of Winds is famous for its honeycomb facade and numerous small windows.",
+    "image": "../assets/images/hawa-mahall.jfif"
+  },
+  {
+    "id": "chittorgarh-fort",
+    "name": "Chittorgarh Fort",
+    "state": "Rajasthan",
+    "location": "Chittorgarh",
+    "period": "Early Medieval Period",
+    "category": "Fort",
+    "description": "One of India's largest forts, associated with the history and legends of Mewar and Rajput resistance.",
+    "image": "../assets/images/chittorgarh-fortt.jfif"
+  },
+  {
+    "id": "jaisalmer-fort",
+    "name": "Jaisalmer Fort",
+    "state": "Rajasthan",
+    "location": "Jaisalmer",
+    "period": "12th Century",
+    "category": "Fort",
+    "description": "A living sandstone fort rising above the Thar Desert, containing homes, temples and historic streets.",
+    "image": "../assets/images/jaisalmer-fortt.jfif"
+  },
+  {
+    "id": "konark-sun-temple",
+    "name": "Konark Sun Temple",
+    "state": "Odisha",
+    "location": "Konark",
+    "period": "13th Century",
+    "category": "Temple",
+    "description": "A UNESCO World Heritage Site designed as the monumental stone chariot of the Sun God Surya.",
+    "image": "../assets/images/konark-sun-temple.jfif"
+  },
+  {
+    "id": "jagannath-temple",
+    "name": "Jagannath Temple",
+    "state": "Odisha",
+    "location": "Puri",
+    "period": "12th Century",
+    "category": "Temple",
+    "description": "A major Hindu pilgrimage centre dedicated to Lord Jagannath and renowned for the annual Rath Yatra.",
+    "image": "../assets/images/jagannath-temple.jfif"
+  },
+  {
+    "id": "khajuraho-temples",
+    "name": "Khajuraho Group of Monuments",
+    "state": "Madhya Pradesh",
+    "location": "Khajuraho",
+    "period": "10th–11th Century",
+    "category": "Temple",
+    "description": "A UNESCO World Heritage Site celebrated for its Nagara-style temples and detailed stone sculptures.",
+    "image": "../assets/images/khajuraho-temples.jfif"
+  },
+  {
+    "id": "sanchi-stupa",
+    "name": "Sanchi Stupa",
+    "state": "Madhya Pradesh",
+    "location": "Sanchi",
+    "period": "3rd Century BCE onwards",
+    "category": "Buddhist Monument",
+    "description": "An important Buddhist monument originally commissioned by Emperor Ashoka and expanded over centuries.",
+    "image": "../assets/images/sanchi-stupaa.jfif"
+  },
+  {
+    "id": "gwalior-fort",
+    "name": "Gwalior Fort",
+    "state": "Madhya Pradesh",
+    "location": "Gwalior",
+    "period": "Early Medieval Period",
+    "category": "Fort",
+    "description": "A dramatic hilltop fort known for its palaces, temples and historic architecture.",
+    "image": "../assets/images/gwalior-fortt.jfif"
+  },
+  {
+    "id": "ajanta-caves",
+    "name": "Ajanta Caves",
+    "state": "Maharashtra",
+    "location": "Chhatrapati Sambhajinagar district",
+    "period": "2nd Century BCE–6th Century CE",
+    "category": "Cave Monument",
+    "description": "Buddhist rock-cut caves famous for ancient murals, sculptures and religious art.",
+    "image": "../assets/images/ajanta-cavess.jfif"
+  },
+  {
+    "id": "ellora-caves",
+    "name": "Ellora Caves",
+    "state": "Maharashtra",
+    "location": "Near Chhatrapati Sambhajinagar",
+    "period": "6th–10th Century",
+    "category": "Cave Monument",
+    "description": "A remarkable complex of Buddhist, Hindu and Jain monuments carved into volcanic rock.",
+    "image": "../assets/images/ellora-cavess.jfif"
+  },
+  {
+    "id": "gateway-of-india",
+    "name": "Gateway of India",
+    "state": "Maharashtra",
+    "location": "Mumbai",
+    "period": "20th Century",
+    "category": "Monument",
+    "description": "An iconic basalt arch built during the British colonial period overlooking Mumbai Harbour.",
+    "image": "../assets/images/gateway-of-indiaa.jfif"
+  },
+  {
+    "id": "hampi",
+    "name": "Hampi Group of Monuments",
+    "state": "Karnataka",
+    "location": "Hampi",
+    "period": "14th–16th Century",
+    "category": "Historic City",
+    "description": "The ruins of the Vijayanagara Empire, featuring temples, royal structures and impressive stone architecture.",
+    "image": "../assets/images/hampii.jfif"
+  },
+  {
+    "id": "mysore-palace",
+    "name": "Mysore Palace",
+    "state": "Karnataka",
+    "location": "Mysuru",
+    "period": "20th Century",
+    "category": "Palace",
+    "description": "The former royal residence of the Wadiyar dynasty, known for its Indo-Saracenic architecture.",
+    "image": "../assets/images/mysore-palacee.jfif"
+  },
+  {
+    "id": "mahabalipuram",
+    "name": "Group of Monuments at Mahabalipuram",
+    "state": "Tamil Nadu",
+    "location": "Mamallapuram",
+    "period": "7th–8th Century",
+    "category": "Temple",
+    "description": "A UNESCO World Heritage Site featuring Pallava-era rock-cut caves, monolithic temples and stone reliefs.",
+    "image": "../assets/images/mahabalipuramm.jfif"
+  },
+  {
+    "id": "brihadeeswara-temple",
+    "name": "Brihadeeswara Temple",
+    "state": "Tamil Nadu",
+    "location": "Thanjavur",
+    "period": "11th Century",
+    "category": "Temple",
+    "description": "A masterpiece of Chola architecture dedicated to Lord Shiva, famous for its monumental vimana.",
+    "image": "../assets/images/brihadeeswara-templee.jfif"
+  },
+  {
+    "id": "meenakshi-temple",
+    "name": "Meenakshi Amman Temple",
+    "state": "Tamil Nadu",
+    "location": "Madurai",
+    "period": "Historic; major expansion in the 16th–17th Century",
+    "category": "Temple",
+    "description": "A celebrated temple complex known for its colourful gopurams and elaborate sculptures.",
+    "image": "../assets/images/Meenakshi Amman Temple.jfif"
+  },
+  {
+    "id": "charminar",
+    "name": "Charminar",
+    "state": "Telangana",
+    "location": "Hyderabad",
+    "period": "16th Century",
+    "category": "Monument",
+    "description": "A landmark monument built by Muhammad Quli Qutb Shah, recognised for its four grand arches and minarets.",
+    "image": "../assets/images/charminarr.jfif"
+  },
+  {
+    "id": "golconda-fort",
+    "name": "Golconda Fort",
+    "state": "Telangana",
+    "location": "Hyderabad",
+    "period": "Medieval Period",
+    "category": "Fort",
+    "description": "A historic fortress associated with the Qutb Shahi dynasty and the region's diamond trade.",
+    "image": "../assets/images/golconda-fortt.jfif"
+  },
+  {
+    "id": "victoria-memorial",
+    "name": "Victoria Memorial",
+    "state": "West Bengal",
+    "location": "Kolkata",
+    "period": "Early 20th Century",
+    "category": "Colonial Architecture",
+    "description": "A white marble memorial and museum built in memory of Queen Victoria, blending European architectural influences.",
+    "image": "../assets/images/victoria-memoriall.jfif"
+  },
+  {
+    "id": "hazar-duari",
+    "name": "Hazarduari Palace",
+    "state": "West Bengal",
+    "location": "Murshidabad",
+    "period": "19th Century",
+    "category": "Palace",
+    "description": "A grand palace built during the Nawabi period, known for its thousand-door design and museum collection.",
+    "image": "../assets/images/hazar-duari.jfif"
+  },
+  {
+    "id": "golden-temple",
+    "name": "Golden Temple",
+    "state": "Punjab",
+    "location": "Amritsar",
+    "period": "16th–19th Century",
+    "category": "Religious Monument",
+    "description": "Harmandir Sahib is the central spiritual site of Sikhism, known for its golden sanctum and community kitchen.",
+    "image": "../assets/images/golden-templee.jfif"
+  },
+  {
+    "id": "rani-ki-vav",
+    "name": "Rani ki Vav",
+    "state": "Gujarat",
+    "location": "Patan",
+    "period": "11th Century",
+    "category": "Stepwell",
+    "description": "A UNESCO World Heritage Site and intricately decorated stepwell commissioned by Queen Udayamati.",
+    "image": "../assets/images/rani-ki-vavv.jfif"
+  },
+  {
+    "id": "dhyanalinga",
+    "name": "Dholavira",
+    "state": "Gujarat",
+    "location": "Khadir Bet, Kutch",
+    "period": "3rd–2nd Millennium BCE",
+    "category": "Archaeological Site",
+    "description": "A major Harappan archaeological site revealing the urban planning, water management and civilisation of the Indus Valley.",
+    "image": "../assets/images/dhyanalinga.jfif"
+  }
+]

@@ -1,0 +1,363 @@
+
+[
+  {
+    "id": "andhra-pradesh",
+    "name": "Andhra Pradesh",
+    "capital": "Amaravati",
+    "region": "South India",
+    "language": "Telugu",
+    "type": "State",
+    "description": "Known for Kuchipudi dance, historic temples and a beautiful coastline.",
+    "famousFor": ["Tirupati Temple", "Kuchipudi", "Araku Valley"]
+  },
+  {
+    "id": "arunachal-pradesh",
+    "name": "Arunachal Pradesh",
+    "capital": "Itanagar",
+    "region": "Northeast India",
+    "language": "English",
+    "type": "State",
+    "description": "The land of the rising sun, famous for Himalayan landscapes and monasteries.",
+    "famousFor": ["Tawang Monastery", "Ziro Valley", "Sela Pass"]
+  },
+  {
+    "id": "assam",
+    "name": "Assam",
+    "capital": "Dispur",
+    "region": "Northeast India",
+    "language": "Assamese",
+    "type": "State",
+    "description": "Famous for tea gardens, silk, wildlife and the Brahmaputra River.",
+    "famousFor": ["Kaziranga", "Assam Tea", "Bihu"]
+  },
+  {
+    "id": "bihar",
+    "name": "Bihar",
+    "capital": "Patna",
+    "region": "East India",
+    "language": "Hindi",
+    "type": "State",
+    "description": "An ancient centre of learning and spirituality, associated with Buddhism and the Mauryan Empire.",
+    "famousFor": ["Nalanda", "Bodh Gaya", "Madhubani Art"]
+  },
+  {
+    "id": "chhattisgarh",
+    "name": "Chhattisgarh",
+    "capital": "Raipur",
+    "region": "Central India",
+    "language": "Hindi",
+    "type": "State",
+    "description": "Known for forests, waterfalls, tribal traditions and ancient temples.",
+    "famousFor": ["Chitrakote Falls", "Bastar Art", "Sirpur"]
+  },
+  {
+    "id": "goa",
+    "name": "Goa",
+    "capital": "Panaji",
+    "region": "West India",
+    "language": "Konkani",
+    "type": "State",
+    "description": "Famous for beaches, Portuguese-influenced architecture and vibrant festivals.",
+    "famousFor": ["Goa Beaches", "Basilica of Bom Jesus", "Carnival"]
+  },
+  {
+    "id": "gujarat",
+    "name": "Gujarat",
+    "capital": "Gandhinagar",
+    "region": "West India",
+    "language": "Gujarati",
+    "type": "State",
+    "description": "Known for Garba, handicrafts, historic stepwells and the white desert of Kutch.",
+    "famousFor": ["Statue of Unity", "Rann of Kutch", "Garba"]
+  },
+  {
+    "id": "haryana",
+    "name": "Haryana",
+    "capital": "Chandigarh",
+    "region": "North India",
+    "language": "Hindi",
+    "type": "State",
+    "description": "A historic land associated with Kurukshetra and the Mahabharata.",
+    "famousFor": ["Kurukshetra", "Surajkund Mela", "Wrestling"]
+  },
+  {
+    "id": "himachal-pradesh",
+    "name": "Himachal Pradesh",
+    "capital": "Shimla",
+    "region": "North India",
+    "language": "Hindi",
+    "type": "State",
+    "description": "A Himalayan state celebrated for mountains, temples and hill stations.",
+    "famousFor": ["Shimla", "Manali", "Dharamshala"]
+  },
+  {
+    "id": "jharkhand",
+    "name": "Jharkhand",
+    "capital": "Ranchi",
+    "region": "East India",
+    "language": "Hindi",
+    "type": "State",
+    "description": "Rich in mineral resources, forests, waterfalls and tribal traditions.",
+    "famousFor": ["Hundru Falls", "Betla National Park", "Sohrai Art"]
+  },
+  {
+    "id": "karnataka",
+    "name": "Karnataka",
+    "capital": "Bengaluru",
+    "region": "South India",
+    "language": "Kannada",
+    "type": "State",
+    "description": "A blend of technology, heritage and natural beauty.",
+    "famousFor": ["Hampi", "Mysore Palace", "Yakshagana"]
+  },
+  {
+    "id": "kerala",
+    "name": "Kerala",
+    "capital": "Thiruvananthapuram",
+    "region": "South India",
+    "language": "Malayalam",
+    "type": "State",
+    "description": "Known for backwaters, Ayurveda, Kathakali and lush landscapes.",
+    "famousFor": ["Alleppey Backwaters", "Kathakali", "Munnar"]
+  },
+  {
+    "id": "madhya-pradesh",
+    "name": "Madhya Pradesh",
+    "capital": "Bhopal",
+    "region": "Central India",
+    "language": "Hindi",
+    "type": "State",
+    "description": "The heart of India, home to ancient temples, forts and wildlife reserves.",
+    "famousFor": ["Khajuraho", "Sanchi Stupa", "Kanha National Park"]
+  },
+  {
+    "id": "maharashtra",
+    "name": "Maharashtra",
+    "capital": "Mumbai",
+    "region": "West India",
+    "language": "Marathi",
+    "type": "State",
+    "description": "Known for Maratha forts, Bollywood, Ajanta and Ellora caves.",
+    "famousFor": ["Gateway of India", "Ajanta Caves", "Ganesh Chaturthi"]
+  },
+  {
+    "id": "manipur",
+    "name": "Manipur",
+    "capital": "Imphal",
+    "region": "Northeast India",
+    "language": "Meitei",
+    "type": "State",
+    "description": "Known for Manipuri dance, Loktak Lake and indigenous traditions.",
+    "famousFor": ["Loktak Lake", "Manipuri Dance", "Kangla Fort"]
+  },
+  {
+    "id": "meghalaya",
+    "name": "Meghalaya",
+    "capital": "Shillong",
+    "region": "Northeast India",
+    "language": "English",
+    "type": "State",
+    "description": "The abode of clouds, famous for living root bridges and waterfalls.",
+    "famousFor": ["Living Root Bridges", "Cherrapunji", "Dawki"]
+  },
+  {
+    "id": "mizoram",
+    "name": "Mizoram",
+    "capital": "Aizawl",
+    "region": "Northeast India",
+    "language": "Mizo",
+    "type": "State",
+    "description": "Known for green hills, bamboo forests and traditional dances.",
+    "famousFor": ["Phawngpui", "Chapchar Kut", "Vantawng Falls"]
+  },
+  {
+    "id": "nagaland",
+    "name": "Nagaland",
+    "capital": "Kohima",
+    "region": "Northeast India",
+    "language": "English",
+    "type": "State",
+    "description": "Celebrated for Naga tribal cultures, crafts and the Hornbill Festival.",
+    "famousFor": ["Hornbill Festival", "Kohima War Cemetery", "Dzukou Valley"]
+  },
+  {
+    "id": "odisha",
+    "name": "Odisha",
+    "capital": "Bhubaneswar",
+    "region": "East India",
+    "language": "Odia",
+    "type": "State",
+    "description": "Famous for temple architecture, Odissi dance and Pattachitra paintings.",
+    "famousFor": ["Konark Sun Temple", "Jagannath Temple", "Chilika Lake"]
+  },
+  {
+    "id": "punjab",
+    "name": "Punjab",
+    "capital": "Chandigarh",
+    "region": "North India",
+    "language": "Punjabi",
+    "type": "State",
+    "description": "The land of five rivers, celebrated for Bhangra, Punjabi cuisine and Sikh heritage.",
+    "famousFor": ["Golden Temple", "Bhangra", "Wagah Border"]
+  },
+  {
+    "id": "rajasthan",
+    "name": "Rajasthan",
+    "capital": "Jaipur",
+    "region": "Northwest India",
+    "language": "Hindi",
+    "type": "State",
+    "description": "The land of kings, renowned for forts, desert landscapes and royal traditions.",
+    "famousFor": ["Hawa Mahal", "Jaisalmer Fort", "Ghoomar"]
+  },
+  {
+    "id": "sikkim",
+    "name": "Sikkim",
+    "capital": "Gangtok",
+    "region": "Northeast India",
+    "language": "Nepali",
+    "type": "State",
+    "description": "A Himalayan state known for Buddhist monasteries and mountain scenery.",
+    "famousFor": ["Kanchenjunga", "Rumtek Monastery", "Tsomgo Lake"]
+  },
+  {
+    "id": "tamil-nadu",
+    "name": "Tamil Nadu",
+    "capital": "Chennai",
+    "region": "South India",
+    "language": "Tamil",
+    "type": "State",
+    "description": "Famous for Dravidian temple architecture, Bharatanatyam and Tamil literature.",
+    "famousFor": ["Meenakshi Temple", "Bharatanatyam", "Mahabalipuram"]
+  },
+  {
+    "id": "telangana",
+    "name": "Telangana",
+    "capital": "Hyderabad",
+    "region": "South India",
+    "language": "Telugu",
+    "type": "State",
+    "description": "Known for Deccan heritage, distinctive cuisine and vibrant urban culture.",
+    "famousFor": ["Charminar", "Golconda Fort", "Bathukamma"]
+  },
+  {
+    "id": "tripura",
+    "name": "Tripura",
+    "capital": "Agartala",
+    "region": "Northeast India",
+    "language": "Bengali",
+    "type": "State",
+    "description": "Known for royal palaces, ancient temples and bamboo crafts.",
+    "famousFor": ["Ujjayanta Palace", "Neermahal", "Tripura Sundari Temple"]
+  },
+  {
+    "id": "uttar-pradesh",
+    "name": "Uttar Pradesh",
+    "capital": "Lucknow",
+    "region": "North India",
+    "language": "Hindi",
+    "type": "State",
+    "description": "A major centre of Indian history, spirituality and architecture.",
+    "famousFor": ["Taj Mahal", "Varanasi", "Kathak"]
+  },
+  {
+    "id": "uttarakhand",
+    "name": "Uttarakhand",
+    "capital": "Dehradun",
+    "region": "North India",
+    "language": "Hindi",
+    "type": "State",
+    "description": "Devbhoomi, known for Himalayan pilgrimage sites and adventure tourism.",
+    "famousFor": ["Kedarnath", "Valley of Flowers", "Rishikesh"]
+  },
+  {
+    "id": "west-bengal",
+    "name": "West Bengal",
+    "capital": "Kolkata",
+    "region": "East India",
+    "language": "Bengali",
+    "type": "State",
+    "description": "A cultural heartland known for literature, Durga Puja and Bengali cuisine.",
+    "famousFor": ["Durga Puja", "Victoria Memorial", "Darjeeling"]
+  },
+  {
+    "id": "andaman-nicobar",
+    "name": "Andaman and Nicobar Islands",
+    "capital": "Sri Vijaya Puram",
+    "region": "Bay of Bengal",
+    "language": "Hindi",
+    "type": "Union Territory",
+    "description": "An island territory known for tropical beaches, coral reefs and marine biodiversity.",
+    "famousFor": ["Cellular Jail", "Radhanagar Beach", "Scuba Diving"]
+  },
+  {
+    "id": "chandigarh",
+    "name": "Chandigarh",
+    "capital": "Chandigarh",
+    "region": "North India",
+    "language": "Hindi",
+    "type": "Union Territory",
+    "description": "A planned modern city known for architecture, gardens and urban design.",
+    "famousFor": ["Rock Garden", "Sukhna Lake", "Capitol Complex"]
+  },
+  {
+    "id": "dadra-nagar-haveli-daman-diu",
+    "name": "Dadra and Nagar Haveli and Daman and Diu",
+    "capital": "Daman",
+    "region": "West India",
+    "language": "Gujarati",
+    "type": "Union Territory",
+    "description": "Known for Portuguese-era heritage, beaches and tribal traditions.",
+    "famousFor": ["Diu Fort", "Devka Beach", "Tribal Culture"]
+  },
+  {
+    "id": "delhi",
+    "name": "Delhi",
+    "capital": "New Delhi",
+    "region": "North India",
+    "language": "Hindi",
+    "type": "Union Territory",
+    "description": "India's National Capital Territory, known for historic monuments and national institutions.",
+    "famousFor": ["Red Fort", "India Gate", "Qutub Minar"]
+  },
+  {
+    "id": "jammu-kashmir",
+    "name": "Jammu and Kashmir",
+    "capital": "Srinagar (summer), Jammu (winter)",
+    "region": "North India",
+    "language": "Kashmiri",
+    "type": "Union Territory",
+    "description": "A Himalayan territory known for valleys, lakes, gardens and handicrafts.",
+    "famousFor": ["Dal Lake", "Gulmarg", "Mughal Gardens"]
+  },
+  {
+    "id": "ladakh",
+    "name": "Ladakh",
+    "capital": "Leh",
+    "region": "North India",
+    "language": "Ladakhi",
+    "type": "Union Territory",
+    "description": "A high-altitude Himalayan territory famous for monasteries and dramatic landscapes.",
+    "famousFor": ["Pangong Lake", "Thiksey Monastery", "Khardung La"]
+  },
+  {
+    "id": "lakshadweep",
+    "name": "Lakshadweep",
+    "capital": "Kavaratti",
+    "region": "Arabian Sea",
+    "language": "Malayalam",
+    "type": "Union Territory",
+    "description": "An archipelago known for coral atolls, turquoise lagoons and marine life.",
+    "famousFor": ["Agatti Island", "Bangaram Island", "Coral Reefs"]
+  },
+  {
+    "id": "puducherry",
+    "name": "Puducherry",
+    "capital": "Puducherry",
+    "region": "South India",
+    "language": "Tamil",
+    "type": "Union Territory",
+    "description": "Known for French colonial heritage, coastal promenades and Tamil culture.",
+    "famousFor": ["French Quarter", "Auroville", "Promenade Beach"]
+  }
+]

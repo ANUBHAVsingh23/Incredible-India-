@@ -1,0 +1,439 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore India's incredible culture, heritage, festivals, food and traditions through an interactive 3D experience.">
+    <title>Incredible India | 3D Cultural Explorer</title>
+    
+    <!-- Website Icon -->
+    <link rel="icon" href="assets/icons/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/landing-heroes.css">
+
+    <!-- Three.js Import Map -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+        }
+    }
+    </script>
+</head>
+
+<body class="home-page">
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="site-header">
+
+        <div class="header-container">
+            <a href="index.html" class="brand">
+                <span class="brand-icon">✦</span>
+                <span>INCREDIBLE INDIA</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <nav class="navigation" id="navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="pages/states.html" class="nav-link">States</a>
+                <a href="pages/festivals.html" class="nav-link">Festivals</a>
+                <a href="pages/food.html" class="nav-link">Food</a>
+                <a href="pages/art-culture.html" class="nav-link">Art &amp; Culture</a>
+                <a href="pages/historical-places.html" class="nav-link">Heritage</a>
+                <a href="pages/languages.html" class="nav-link">Languages</a>
+                <a href="pages/personalities.html" class="nav-link">Personalities</a>
+                <a href="pages/about-india.html" class="nav-link">About India</a>
+                <a href="pages/about-project.html" class="nav-link">About Project</a>
+            </nav>
+            <a href="#explore-map" class="header-button">Explore India ↗</a>
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <main>
+
+        <section class="hero-section">
+
+            <div class="hero-background"></div>
+
+            <div class="hero-content">
+
+                <span class="hero-label">
+                    ✦ DISCOVER THE LAND OF DIVERSITY ✦
+                </span>
+
+                <h1>
+                    Experience the Soul of
+                    <span>Incredible India</span>
+                </h1>
+
+                <p>
+                    Explore thousands of years of history, diverse cultures,
+                    magnificent monuments, vibrant festivals and extraordinary
+                    traditions through an immersive interactive experience.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#explore-map" class="btn btn-primary">
+                        Explore 3D India →
+                    </a>
+
+                    <a href="pages/about-india.html" class="btn btn-secondary">
+                        Discover Our Heritage
+                    </a>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div>
+                        <h3>28</h3>
+                        <span>States</span>
+                    </div>
+
+                    <div>
+                        <h3>8</h3>
+                        <span>Union Territories</span>
+                    </div>
+
+                    <div>
+                        <h3>22</h3>
+                        <span>Scheduled Languages</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= 3D INDIA MAP ================= -->
+
+        <section class="map-section" id="explore-map">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    INTERACTIVE EXPERIENCE
+                </span>
+
+                <h2>
+                    Explore India in <span>3D</span>
+                </h2>
+
+                <p>
+                    Discover every state and union territory.
+                    Rotate, zoom and select a region to explore its culture.
+                </p>
+
+            </div>
+
+
+            <div class="map-layout">
+
+                <!-- Map Controls -->
+
+                <div class="map-controls">
+
+                    <div class="map-search">
+
+                        <input type="text"
+                            id="stateSearch"
+                            placeholder="Search Indian state...">
+
+                        <button id="searchButton" aria-label="Search">
+                            ⌕
+                        </button>
+
+                    </div>
+
+                    <div class="map-control-buttons">
+
+                        <button id="zoomIn" title="Zoom In">＋</button>
+
+                        <button id="zoomOut" title="Zoom Out">－</button>
+
+                        <button id="resetCamera" title="Reset View">⟳</button>
+
+                    </div>
+
+                    <div class="map-instructions">
+
+                        <h4>HOW TO EXPLORE</h4>
+
+                        <p>🖱️ Drag to rotate the map</p>
+
+                        <p>🔍 Scroll to zoom in and out</p>
+
+                        <p>👆 Click a state to explore</p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Three.js Canvas Container -->
+
+                <div class="map-container" id="mapContainer">
+
+                    <div class="map-loading" id="mapLoading">
+
+                        <div class="loading-spinner"></div>
+
+                        <p>Preparing the 3D map of India...</p>
+
+                    </div>
+
+                    <div id="indiaMapCanvas" role="img"
+                        aria-label="Interactive 3D map of India"></div>
+
+                    <div class="map-overlay">
+
+                        <span class="map-overlay-label">
+                            <span class="status-dot"></span>
+                            INTERACTIVE 3D MAP
+                        </span>
+
+                        <span class="map-overlay-coordinate">
+                            INDIA • 8°N – 37°N
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- State Information Panel -->
+
+                <aside class="state-panel" id="statePanel">
+
+                    <div class="panel-placeholder" id="panelPlaceholder">
+
+                        <div class="panel-icon">🇮🇳</div>
+
+                        <h3>Discover India</h3>
+
+                        <p>
+                            Select any state on the 3D map to discover
+                            its capital, culture, traditions and heritage.
+                        </p>
+
+                    </div>
+
+
+                    <div class="state-details" id="stateDetails" hidden>
+
+                        <span class="panel-label">EXPLORE REGION</span>
+
+                        <h2 id="selectedStateName">State Name</h2>
+
+                        <p id="selectedStateDescription"></p>
+
+                        <div class="state-info">
+
+                            <div>
+                                <span>Capital</span>
+                                <strong id="selectedStateCapital">-</strong>
+                            </div>
+
+                            <div>
+                                <span>Region</span>
+                                <strong id="selectedStateRegion">-</strong>
+                            </div>
+
+                        </div>
+
+                        <a href="#" id="exploreStateButton"
+                            class="btn btn-primary">
+                            Explore State →
+                        </a>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CULTURAL DISCOVERY ================= -->
+
+        <section class="discovery-section">
+
+            <div class="section-heading">
+
+                <span class="section-label">A LAND OF DIVERSITY</span>
+
+                <h2>Discover India's Rich Heritage</h2>
+
+                <p>
+                    Every corner of India tells a unique story.
+                    Discover the traditions that make our country extraordinary.
+                </p>
+
+            </div>
+
+
+            <div class="discovery-grid">
+
+                <a href="pages/festivals.html" class="discovery-card">
+
+                    <img src="assets/images/festivalsofindia.jpg"
+                        alt="Indian festivals">
+                    <div class="discovery-card-content">
+                        <span>01 / CELEBRATIONS</span>
+                        <h3>Festivals of India</h3>
+                        <p>Experience India's colourful celebrations.</p>
+                    </div>
+
+                </a>
+
+
+                <a href="pages/food.html" class="discovery-card">
+
+                    <img src="assets/images/flavoursofindia.jpg"
+                        alt="Indian traditional cuisine">
+                    <div class="discovery-card-content">
+                        <span>02 / CUISINE</span>
+                        <h3>Flavours of India</h3>
+                        <p>Discover the diverse tastes of Indian cuisine.</p>
+                    </div>
+
+                </a>
+
+
+                <a href="pages/art-culture.html" class="discovery-card">
+
+                    <img src="assets/images/artculture.jpg"
+                        alt="Indian classical dance">
+
+                    <div class="discovery-card-content">
+                        <span>03 / TRADITIONS</span>
+                        <h3>Art & Culture</h3>
+                        <p>Explore traditional arts, music and dance.</p>
+                    </div>
+
+                </a>
+
+
+                <a href="pages/historical-places.html" class="discovery-card">
+
+                    <img src="assets/images/historicalplaces.jpg"
+                        alt="Taj Mahal">
+
+                    <div class="discovery-card-content">
+                        <span>04 / HERITAGE</span>
+                        <h3>Historical Places</h3>
+                        <p>Travel through India's magnificent history.</p>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT SECTION ================= -->
+
+        <section class="about-section">
+
+            <div class="about-content">
+
+                <span class="section-label">THE SPIRIT OF INDIA</span>
+
+                <h2>
+                    Unity in Diversity,
+                    <span>One Incredible Nation.</span>
+                </h2>
+
+                <p>
+                    India is a land where ancient traditions meet modern
+                    aspirations. From the Himalayas to the Indian Ocean,
+                    every region has its own identity, language, art,
+                    cuisine and cultural heritage.
+                </p>
+
+                <a href="pages/about-india.html" class="btn btn-primary">
+                    Explore India's Story →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <h2>✦ INCREDIBLE INDIA</h2>
+
+                <p>
+                    Celebrating India's culture, heritage,
+                    history and diversity through technology.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Explore</h3>
+
+                <a href="pages/states.html">States</a>
+                <a href="pages/festivals.html">Festivals</a>
+                <a href="pages/food.html">Indian Food</a>
+                <a href="pages/art-culture.html">Art & Culture</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Discover</h3>
+                <a href="pages/historical-places.html">Historical Places</a>
+                <a href="pages/languages.html">Languages</a>
+                <a href="pages/personalities.html">Personalities</a>
+                <a href="pages/about-project.html">About Project</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                © 2026 Incredible India – 3D Cultural Explorer.
+                Made with ❤️ for India.
+            </p>
+        </div>
+    </footer>
+    <!-- Main JavaScript -->
+    <script type="module" src="js/main.js"></script>
+
+</body>
+</html>

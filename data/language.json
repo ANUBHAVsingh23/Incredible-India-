@@ -1,0 +1,273 @@
+
+[
+  {
+    "id": "hindi",
+    "name": "Hindi",
+    "region": "North India",
+    "family": "Indo-Aryan",
+    "script": "Devanagari",
+    "speakers": "Over 500 million native speakers",
+    "description": "One of India's most widely spoken languages, used in literature, cinema, education and everyday communication."
+  },
+  {
+    "id": "punjabi",
+    "name": "Punjabi",
+    "region": "North India",
+    "family": "Indo-Aryan",
+    "script": "Gurmukhi in India",
+    "speakers": "Over 30 million native speakers in India",
+    "description": "A vibrant language associated with Punjab's folk traditions, poetry, music and rich literary heritage."
+  },
+  {
+    "id": "kashmiri",
+    "name": "Kashmiri",
+    "region": "North India",
+    "family": "Indo-Aryan",
+    "script": "Perso-Arabic and Devanagari",
+    "speakers": "Several million speakers",
+    "description": "A language of the Kashmir Valley, known for its poetry, Sufi traditions and distinctive literary heritage."
+  },
+  {
+    "id": "dogri",
+    "name": "Dogri",
+    "region": "North India",
+    "family": "Indo-Aryan",
+    "script": "Devanagari",
+    "speakers": "Several million speakers",
+    "description": "Spoken mainly in the Jammu region, Dogri has a strong tradition of folk songs, storytelling and poetry."
+  },
+  {
+    "id": "sanskrit",
+    "name": "Sanskrit",
+    "region": "North India",
+    "family": "Indo-Aryan",
+    "script": "Devanagari commonly used",
+    "speakers": "Small number of everyday speakers; extensive scholarly and liturgical use",
+    "description": "An ancient classical language of India, central to many Hindu, Buddhist and Jain philosophical and literary traditions."
+  },
+  {
+    "id": "urdu",
+    "name": "Urdu",
+    "region": "North India",
+    "family": "Indo-Aryan",
+    "script": "Perso-Arabic Nastaliq",
+    "speakers": "Tens of millions of speakers",
+    "description": "Known for its poetic expression, ghazals, literary traditions and rich vocabulary."
+  },
+  {
+    "id": "bhojpuri",
+    "name": "Bhojpuri",
+    "region": "North India",
+    "family": "Indo-Aryan",
+    "script": "Devanagari",
+    "speakers": "Tens of millions of speakers",
+    "description": "Popular in eastern Uttar Pradesh and western Bihar, with a strong tradition of folk music and cinema."
+  },
+  {
+    "id": "awadhi",
+    "name": "Awadhi",
+    "region": "North India",
+    "family": "Indo-Aryan",
+    "script": "Devanagari",
+    "speakers": "Millions of speakers",
+    "description": "A literary language associated with the Awadh region and the celebrated epic Ramcharitmanas."
+  },
+  {
+    "id": "rajasthani",
+    "name": "Rajasthani",
+    "region": "North India",
+    "family": "Indo-Aryan",
+    "script": "Devanagari",
+    "speakers": "Millions of speakers across varieties",
+    "description": "A group of related language varieties known for folk ballads, oral storytelling and regional literature."
+  },
+  {
+    "id": "gujarati",
+    "name": "Gujarati",
+    "region": "West India",
+    "family": "Indo-Aryan",
+    "script": "Gujarati",
+    "speakers": "Over 50 million native speakers",
+    "description": "The principal language of Gujarat, with a rich literary history and a strong tradition of trade and theatre."
+  },
+  {
+    "id": "marathi",
+    "name": "Marathi",
+    "region": "West India",
+    "family": "Indo-Aryan",
+    "script": "Devanagari",
+    "speakers": "Over 80 million native speakers",
+    "description": "Spoken mainly in Maharashtra, Marathi has a distinguished tradition of poetry, theatre and modern literature."
+  },
+  {
+    "id": "konkani",
+    "name": "Konkani",
+    "region": "West India",
+    "family": "Indo-Aryan",
+    "script": "Devanagari, Roman and other scripts",
+    "speakers": "Millions of speakers",
+    "description": "A coastal language spoken especially in Goa and parts of the Konkan region, shaped by diverse cultural influences."
+  },
+  {
+    "id": "sindhi",
+    "name": "Sindhi",
+    "region": "West India",
+    "family": "Indo-Aryan",
+    "script": "Perso-Arabic and Devanagari",
+    "speakers": "Millions of speakers in India",
+    "description": "A language with a rich Sufi, folk and literary tradition, spoken by communities across India."
+  },
+  {
+    "id": "malayalam",
+    "name": "Malayalam",
+    "region": "South India",
+    "family": "Dravidian",
+    "script": "Malayalam",
+    "speakers": "Over 30 million native speakers",
+    "description": "The principal language of Kerala, recognised for its literature, cinema, poetry and distinctive script."
+  },
+  {
+    "id": "tamil",
+    "name": "Tamil",
+    "region": "South India",
+    "family": "Dravidian",
+    "script": "Tamil",
+    "speakers": "Over 60 million native speakers in India",
+    "description": "A classical language with an ancient literary tradition, including Sangam poetry and celebrated Tamil epics."
+  },
+  {
+    "id": "telugu",
+    "name": "Telugu",
+    "region": "South India",
+    "family": "Dravidian",
+    "script": "Telugu",
+    "speakers": "Over 80 million native speakers",
+    "description": "A major Dravidian language spoken in Andhra Pradesh and Telangana, famous for its literary and cinematic traditions."
+  },
+  {
+    "id": "kannada",
+    "name": "Kannada",
+    "region": "South India",
+    "family": "Dravidian",
+    "script": "Kannada",
+    "speakers": "Over 40 million native speakers",
+    "description": "The principal language of Karnataka, with a literary history spanning more than a thousand years."
+  },
+  {
+    "id": "tulu",
+    "name": "Tulu",
+    "region": "South India",
+    "family": "Dravidian",
+    "script": "Traditionally Tigalari; Kannada widely used",
+    "speakers": "Millions of speakers",
+    "description": "Spoken mainly in coastal Karnataka and parts of Kerala, known for its folk theatre and ritual traditions."
+  },
+  {
+    "id": "kodava",
+    "name": "Kodava",
+    "region": "South India",
+    "family": "Dravidian",
+    "script": "Kannada commonly used",
+    "speakers": "Tens of thousands of speakers",
+    "description": "A language of the Kodagu region of Karnataka, closely connected with the community's distinctive cultural traditions."
+  },
+  {
+    "id": "gondi",
+    "name": "Gondi",
+    "region": "Central India",
+    "family": "Dravidian",
+    "script": "Several scripts, including Gunjala Gondi and Devanagari",
+    "speakers": "Millions of speakers",
+    "description": "An important language of Gond communities across central India, with a rich oral heritage."
+  },
+  {
+    "id": "bengali",
+    "name": "Bengali",
+    "region": "East India",
+    "family": "Indo-Aryan",
+    "script": "Bengali-Assamese",
+    "speakers": "Over 90 million native speakers in India",
+    "description": "A major literary language associated with Rabindranath Tagore, poetry, music and the Bengal Renaissance."
+  },
+  {
+    "id": "assamese",
+    "name": "Assamese",
+    "region": "Northeast India",
+    "family": "Indo-Aryan",
+    "script": "Assamese",
+    "speakers": "Over 15 million native speakers",
+    "description": "The principal language of Assam, with a strong tradition of literature, theatre and devotional music."
+  },
+  {
+    "id": "odia",
+    "name": "Odia",
+    "region": "East India",
+    "family": "Indo-Aryan",
+    "script": "Odia",
+    "speakers": "Over 30 million native speakers",
+    "description": "The principal language of Odisha, recognised for its classical literature and devotional poetry."
+  },
+  {
+    "id": "santali",
+    "name": "Santali",
+    "region": "East India",
+    "family": "Austroasiatic",
+    "script": "Ol Chiki and other scripts",
+    "speakers": "Millions of speakers",
+    "description": "An important Munda language with a rich oral tradition, folk music and community literature."
+  },
+  {
+    "id": "bodo",
+    "name": "Bodo",
+    "region": "Northeast India",
+    "family": "Sino-Tibetan",
+    "script": "Devanagari",
+    "speakers": "Over one million speakers",
+    "description": "A major language of Assam's Bodo community, with a growing body of modern literature."
+  },
+  {
+    "id": "manipuri",
+    "name": "Manipuri (Meitei)",
+    "region": "Northeast India",
+    "family": "Sino-Tibetan",
+    "script": "Meitei Mayek and Bengali-Assamese",
+    "speakers": "Millions of speakers",
+    "description": "The principal language of Manipur, known for its classical dance, poetry and cultural heritage."
+  },
+  {
+    "id": "mizo",
+    "name": "Mizo",
+    "region": "Northeast India",
+    "family": "Sino-Tibetan",
+    "script": "Latin",
+    "speakers": "Over one million speakers",
+    "description": "The principal language of Mizoram, with a strong tradition of community singing and literature."
+  },
+  {
+    "id": "khasi",
+    "name": "Khasi",
+    "region": "Northeast India",
+    "family": "Austroasiatic",
+    "script": "Latin",
+    "speakers": "Millions of speakers",
+    "description": "Spoken mainly in Meghalaya, Khasi has a rich oral tradition and is closely tied to local cultural identity."
+  },
+  {
+    "id": "garo",
+    "name": "Garo",
+    "region": "Northeast India",
+    "family": "Sino-Tibetan",
+    "script": "Latin",
+    "speakers": "Millions of speakers",
+    "description": "A language spoken by Garo communities, especially in Meghalaya, with a strong oral and folk tradition."
+  },
+  {
+    "id": "lepcha",
+    "name": "Lepcha",
+    "region": "Northeast India",
+    "family": "Sino-Tibetan",
+    "script": "Lepcha",
+    "speakers": "Tens of thousands of speakers",
+    "description": "An indigenous Himalayan language spoken in parts of Sikkim and neighbouring regions, with its own traditional script."
+  }
+]

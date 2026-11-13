@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explore India's rich art and culture, including traditional paintings, folk dances, music, handicrafts and cultural traditions.">
+
+    <title>Art & Culture of India | Incredible India</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <style>
+        .page-hero {
+            padding: 90px 8% 70px;
+            text-align: center;
+            background:
+                linear-gradient(rgba(245, 247, 244, .84), rgba(245, 247, 244, .93)),
+                url("../assets/images/taj-mahall.jfif") center/cover;
+        }
+
+        .page-hero .eyebrow {
+            color: var(--gold);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: .85rem;
+        }
+
+        .page-hero h1 {
+            color: var(--gold-light);
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin: 15px 0;
+        }
+
+        .page-hero p {
+            max-width: 720px;
+            margin: auto;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .culture-section {
+            padding: 60px 8%;
+        }
+
+        .culture-intro {
+            max-width: 850px;
+            margin-bottom: 35px;
+        }
+
+        .culture-intro h2 {
+            color: var(--gold-light);
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+
+        .culture-intro p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .culture-toolbar {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .culture-toolbar input,
+        .culture-toolbar select {
+            width: 100%;
+            padding: 14px 16px;
+            border-radius: 8px;
+            border: 1px solid rgba(212, 175, 55, .3);
+            background: var(--bg-surface);
+            color: var(--text-primary);
+            outline: none;
+            font: inherit;
+        }
+
+        .culture-toolbar input:focus,
+        .culture-toolbar select:focus {
+            border-color: var(--gold);
+        }
+
+        .culture-toolbar select option {
+            background: var(--bg-surface);
+            color: var(--text-primary);
+        }
+
+        .culture-result {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .culture-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            grid-auto-rows: 1fr;
+            gap: 24px;
+        }
+
+        .culture-grid .directory-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            background: var(--bg-surface);
+            border: 1px solid rgba(212, 175, 55, .16);
+            overflow: hidden;
+        }
+
+        .culture-grid .directory-card-image {
+            width: 100%;
+            height: clamp(165px, 17vw, 205px);
+            flex: 0 0 auto;
+        }
+
+        .culture-grid .directory-card-image img {
+            object-fit: cover;
+        }
+
+        .culture-grid .directory-card-content {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 18px;
+        }
+
+        .culture-grid .directory-card-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px 12px;
+            color: var(--gold);
+            font-size: .78rem;
+            line-height: 1.45;
+        }
+
+        .culture-grid .directory-card h3 {
+            color: var(--gold-light);
+            font-size: 1.2rem;
+            line-height: 1.35;
+        }
+
+        .culture-grid .directory-card-description,
+        .culture-grid .directory-card-details p {
+            color: var(--text-secondary);
+            font-size: .9rem;
+            line-height: 1.6;
+        }
+
+        .culture-grid .directory-card-details {
+            display: grid;
+            gap: 5px;
+        }
+
+        .culture-grid .directory-card-details strong {
+            color: var(--text-primary);
+        }
+
+        .directory-card-video-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: auto;
+            padding: 8px 14px;
+            border: 1px solid var(--video-hover-color);
+            border-radius: 999px;
+            color: var(--video-hover-color);
+            background: transparent;
+            font-size: .88rem;
+            font-weight: 700;
+            line-height: 1.4;
+            transition:
+                color .2s ease,
+                background-color .2s ease,
+                border-color .2s ease,
+                box-shadow .2s ease,
+                transform .2s ease;
+        }
+
+        .directory-card-video-link:hover,
+        .directory-card-video-link:focus-visible {
+            color: #fff;
+            background: var(--video-hover-color);
+            border-color: var(--video-hover-color);
+            box-shadow: 0 5px 14px rgba(32, 42, 50, .18);
+            transform: translateY(-2px);
+        }
+
+        .directory-card-video-link span {
+            transition: transform .2s ease;
+        }
+
+        .directory-card-video-link:hover span,
+        .directory-card-video-link:focus-visible span {
+            transform: translate(2px, -2px);
+        }
+
+        .empty-state {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 50px 20px;
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 900px) {
+            .culture-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .culture-section {
+                padding: 40px 6%;
+            }
+
+            .culture-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 18px;
+            }
+
+            .culture-toolbar {
+                grid-template-columns: 1fr;
+            }
+
+            .page-hero {
+                padding: 70px 6%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .culture-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .culture-grid .directory-card-content {
+                padding: 16px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="../css/landing-heroes.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="../index.html" class="brand">
+                <span class="brand-icon">✦</span>
+                <span>INCREDIBLE INDIA</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <nav class="navigation" id="navigation">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="states.html" class="nav-link">States</a>
+                <a href="festivals.html" class="nav-link">Festivals</a>
+                <a href="food.html" class="nav-link">Food</a>
+                <a href="art-culture.html" class="nav-link">Art &amp; Culture</a>
+                <a href="historical-places.html" class="nav-link">Heritage</a>
+                <a href="languages.html" class="nav-link">Languages</a>
+                <a href="personalities.html" class="nav-link">Personalities</a>
+                <a href="about-india.html" class="nav-link">About India</a>
+                <a href="about-project.html" class="nav-link">About Project</a>
+            </nav>
+            <a href="../index.html#explore-map" class="header-button">Explore India ↗</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="page-hero page-hero--culture">
+            <span class="eyebrow">Traditions • Creativity • Heritage</span>
+
+            <h1>Art & Culture of India</h1>
+
+            <p>
+                Discover the artistic soul of India through its classical
+                dances, folk traditions, traditional paintings, music,
+                handicrafts and diverse cultural expressions.
+            </p>
+        </section>
+
+        <!-- Cultural Directory -->
+        <section class="culture-section">
+
+            <div class="culture-intro">
+                <h2>A Living Cultural Heritage</h2>
+
+                <p>
+                    India's cultural identity is shaped by generations of
+                    artists, performers and craftspeople. Explore the
+                    traditions that continue to inspire communities across
+                    the country.
+                </p>
+            </div>
+
+            <div class="culture-toolbar">
+
+                <input
+                    type="search"
+                    id="artCultureSearch"
+                    placeholder="Search art, dance, music or traditions..."
+                    aria-label="Search art and culture"
+                >
+
+                <select
+                    id="artCultureStateFilter"
+                    aria-label="Filter by state"
+                >
+                    <option value="">All States</option>
+                </select>
+
+                <select
+                    id="artCultureCategoryFilter"
+                    aria-label="Filter by category"
+                >
+                    <option value="">All Categories</option>
+                </select>
+
+            </div>
+
+            <p class="culture-result" id="artCultureResult">
+                Loading cultural traditions...
+            </p>
+
+            <div class="culture-grid" id="artCultureContainer">
+                <!-- Cards generated by JavaScript -->
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <h3>Incredible India</h3>
+
+            <p>
+                Discover the diversity, traditions and timeless heritage of India.
+            </p>
+
+            <p class="footer-bottom">
+                © 2026 Incredible India – 3D Cultural Explorer
+            </p>
+        </div>
+    </footer>
+
+    <script src="../js/directory.js"></script>
+    <script type="module" src="../js/main.js"></script>
+
+</body>
+</html>

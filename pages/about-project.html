@@ -1,0 +1,550 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Learn about the Incredible India 3D Cultural Explorer project, its objectives, technologies and features.">
+
+    <title>About the Project | Incredible India</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <style>
+        .project-hero {
+            padding: 95px 8%;
+            text-align: center;
+            background:
+                linear-gradient(rgba(245, 247, 244, .84), rgba(245, 247, 244, .93)),
+                url("../assets/images/taj-mahall.jfif") center/cover;
+        }
+
+        .eyebrow {
+            color: var(--gold);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: .85rem;
+        }
+
+        .project-hero h1 {
+            color: var(--gold-light);
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin: 15px 0;
+        }
+
+        .project-hero p {
+            max-width: 780px;
+            margin: auto;
+            color: var(--text-secondary);
+            line-height: 1.9;
+        }
+
+        .project-section {
+            padding: 65px 8%;
+        }
+
+        .section-heading {
+            margin-bottom: 30px;
+        }
+
+        .section-heading h2 {
+            color: var(--gold-light);
+            font-size: clamp(1.7rem, 4vw, 2.5rem);
+            margin-bottom: 12px;
+        }
+
+        .section-heading p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            max-width: 850px;
+        }
+
+        .project-description {
+            max-width: 950px;
+            color: var(--text-secondary);
+            font-size: 1.02rem;
+            line-height: 1.9;
+        }
+
+        .objectives-grid,
+        .features-grid,
+        .technology-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 22px;
+        }
+
+        .project-card {
+            padding: 25px;
+            background: var(--bg-surface);
+            border: 1px solid rgba(212, 175, 55, .16);
+            border-radius: 14px;
+            transition: transform .3s ease, border-color .3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+        }
+
+        .project-icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .project-card h3 {
+            color: var(--gold-light);
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            font-size: .94rem;
+        }
+
+        .tech-name {
+            color: var(--gold);
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .project-structure {
+            padding: 25px;
+            border-radius: 12px;
+            background: #eef1ed;
+            border: 1px solid rgba(212, 175, 55, .2);
+            overflow-x: auto;
+        }
+
+        .project-structure pre {
+            color: #35414a;
+            font-family: Consolas, monospace;
+            font-size: .9rem;
+            line-height: 1.8;
+            white-space: pre;
+        }
+
+        .developer-card {
+            padding: 35px;
+            max-width: 700px;
+            border-radius: 16px;
+            background: var(--bg-surface);
+            border: 1px solid rgba(212, 175, 55, .2);
+        }
+
+        .developer-card h3 {
+            color: var(--gold-light);
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+        }
+
+        .developer-card p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .project-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .project-link {
+            display: inline-block;
+            padding: 12px 20px;
+            border: 1px solid var(--gold);
+            border-radius: 8px;
+            color: var(--gold-light);
+            text-decoration: none;
+            transition: background .3s ease;
+        }
+
+        .project-link:hover {
+            background: rgba(212, 175, 55, .12);
+        }
+
+        @media (max-width: 768px) {
+            .project-hero {
+                padding: 70px 6%;
+            }
+
+            .project-section {
+                padding: 45px 6%;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="../css/landing-heroes.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="../index.html" class="brand">
+                <span class="brand-icon">✦</span>
+                <span>INCREDIBLE INDIA</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <nav class="navigation" id="navigation">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="states.html" class="nav-link">States</a>
+                <a href="festivals.html" class="nav-link">Festivals</a>
+                <a href="food.html" class="nav-link">Food</a>
+                <a href="art-culture.html" class="nav-link">Art &amp; Culture</a>
+                <a href="historical-places.html" class="nav-link">Heritage</a>
+                <a href="languages.html" class="nav-link">Languages</a>
+                <a href="personalities.html" class="nav-link">Personalities</a>
+                <a href="about-india.html" class="nav-link">About India</a>
+                <a href="about-project.html" class="nav-link">About Project</a>
+            </nav>
+            <a href="../index.html#explore-map" class="header-button">Explore India ↗</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="project-hero project-hero--refresh">
+            <span class="eyebrow">Our Project • Our Vision</span>
+
+            <h1>About Incredible India</h1>
+
+            <p>
+                An interactive digital journey through India's geography,
+                culture, traditions and heritage, combining web technologies
+                and immersive 3D visualization to make cultural exploration
+                more engaging.
+            </p>
+        </section>
+
+        <!-- Project Introduction -->
+        <section class="project-section">
+            <div class="section-heading">
+                <h2>Project Overview</h2>
+                <p>Understanding the idea behind this digital experience.</p>
+            </div>
+
+            <p class="project-description">
+                Incredible India – 3D Cultural Explorer is a web-based
+                educational and cultural exploration platform designed
+                to present India's diversity through an interactive
+                experience. Visitors can explore Indian states and union
+                territories, learn about festivals, discover regional
+                cuisines, understand traditional art forms, explore
+                historical places and learn about India's languages
+                and notable personalities.
+
+                <br><br>
+
+                The project combines a 3D geographical experience with
+                structured cultural information, searchable directories
+                and responsive web design.
+            </p>
+        </section>
+
+        <!-- Objectives -->
+        <section class="project-section">
+            <div class="section-heading">
+                <h2>Project Objectives</h2>
+                <p>The main goals of developing this platform.</p>
+            </div>
+
+            <div class="objectives-grid">
+
+                <article class="project-card">
+                    <div class="project-icon">🇮🇳</div>
+                    <h3>Promote Indian Heritage</h3>
+                    <p>
+                        Present India's history, traditions and cultural
+                        diversity through a digital platform.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">🌍</div>
+                    <h3>Interactive Exploration</h3>
+                    <p>
+                        Provide an engaging geographical experience through
+                        an interactive 3D map of India.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">📚</div>
+                    <h3>Educational Experience</h3>
+                    <p>
+                        Make information about Indian states, festivals,
+                        cuisine and heritage easier to explore.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">💻</div>
+                    <h3>Modern Web Development</h3>
+                    <p>
+                        Demonstrate frontend development using HTML,
+                        CSS, JavaScript and Three.js.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="project-section">
+            <div class="section-heading">
+                <h2>Key Features</h2>
+                <p>What visitors can experience on this platform.</p>
+            </div>
+
+            <div class="features-grid">
+
+                <article class="project-card">
+                    <div class="project-icon">🗺️</div>
+                    <h3>Interactive 3D Map</h3>
+                    <p>
+                        Explore India's geographical regions through
+                        a 3D map with state selection and information.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">🏞️</div>
+                    <h3>State Explorer</h3>
+                    <p>
+                        Discover the capitals, regions, languages
+                        and highlights of Indian states and UTs.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">🎉</div>
+                    <h3>Festival Directory</h3>
+                    <p>
+                        Explore celebrations and traditional festivals
+                        across different Indian regions.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">🍛</div>
+                    <h3>Regional Cuisine</h3>
+                    <p>
+                        Discover famous dishes, their ingredients
+                        and regional food traditions.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">🎨</div>
+                    <h3>Art and Culture</h3>
+                    <p>
+                        Learn about traditional paintings, folk dances,
+                        handicrafts and cultural practices.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">🏛️</div>
+                    <h3>Historical Heritage</h3>
+                    <p>
+                        Explore India's monuments, forts, temples
+                        and architectural landmarks.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">🗣️</div>
+                    <h3>Language Explorer</h3>
+                    <p>
+                        Discover India's regional languages,
+                        scripts and linguistic diversity.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">⭐</div>
+                    <h3>Famous Personalities</h3>
+                    <p>
+                        Learn about influential personalities
+                        from different fields and generations.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Technologies -->
+        <section class="project-section">
+            <div class="section-heading">
+                <h2>Technologies Used</h2>
+                <p>Technologies used to build the web application.</p>
+            </div>
+
+            <div class="technology-grid">
+
+                <article class="project-card">
+                    <div class="tech-name">HTML5</div>
+                    <h3>Structure</h3>
+                    <p>
+                        Used to create the structure and content
+                        of the website.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="tech-name">CSS3</div>
+                    <h3>Design</h3>
+                    <p>
+                        Used for layouts, responsive design,
+                        animations and visual styling.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="tech-name">JavaScript</div>
+                    <h3>Functionality</h3>
+                    <p>
+                        Used for interactive features, search,
+                        filters, data loading and user interactions.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="tech-name">Three.js</div>
+                    <h3>3D Visualization</h3>
+                    <p>
+                        Used to create and render the interactive
+                        three-dimensional geographical experience.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="tech-name">JSON</div>
+                    <h3>Data Management</h3>
+                    <p>
+                        Used to organize state information, festivals,
+                        cuisines and other cultural content.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="tech-name">GeoJSON</div>
+                    <h3>Geographical Data</h3>
+                    <p>
+                        Used to represent geographical boundaries
+                        for the interactive map.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Project Structure -->
+        <section class="project-section">
+            <div class="section-heading">
+                <h2>Project Architecture</h2>
+                <p>Organized into separate pages, styles, scripts and data.</p>
+            </div>
+
+            <div class="project-structure">
+<pre>incredible-india-3d-cultural-explorer/
+│
+├── index.html
+│
+├── pages/
+│   ├── states.html
+│   ├── state.html
+│   ├── festivals.html
+│   ├── food.html
+│   ├── art-culture.html
+│   ├── historical-places.html
+│   ├── languages.html
+│   ├── personalities.html
+│   ├── about-india.html
+│   └── about-project.html
+│
+├── css/
+│   ├── style.css
+│   ├── responsive.css
+│   ├── animations.css
+│   └── map.css
+│
+├── js/
+│   ├── main.js
+│   ├── map3d.js
+│   ├── map-interactions.js
+│   ├── states.js
+│   ├── state-page.js
+│   ├── festivals.js
+│   ├── food.js
+│   └── directory.js
+│
+├── data/
+│   ├── states.json
+│   ├── festivals.json
+│   ├── cuisines.json
+│   └── india_states_36.geojson
+│
+└── assets/
+    ├── images/
+    └── icons/</pre>
+            </div>
+        </section>
+
+        <!-- Developer -->
+        <section class="project-section">
+            <div class="section-heading">
+                <h2>Project Development</h2>
+                <p>Information about the project creator and development.</p>
+            </div>
+
+            <div class="developer-card">
+                <h3>Developed as an Educational Project</h3>
+
+                <p>
+                    This project demonstrates practical frontend development,
+                    interactive visualization, data handling and responsive
+                    web design. It aims to make learning about India's
+                    cultural and geographical diversity more engaging.
+                </p>
+
+                <div class="project-links">
+                    <a href="../index.html" class="project-link">
+                        Explore Website →
+                    </a>
+
+                    <a href="states.html" class="project-link">
+                        Explore Indian States →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <h3>Incredible India</h3>
+
+            <p>
+                Discover the diversity, traditions and timeless heritage of India.
+            </p>
+
+            <p class="footer-bottom">
+                © 2026 Incredible India – 3D Cultural Explorer
+            </p>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+
+</body>
+</html>

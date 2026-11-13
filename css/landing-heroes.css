@@ -1,0 +1,507 @@
+/* Distinct editorial treatments for the site's landing-page heroes. */
+
+.page-hero,
+.states-heading,
+.project-hero {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+section.page-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, .82fr);
+    grid-template-rows: auto auto auto;
+    align-content: center;
+    align-items: center;
+    gap: 12px 5%;
+    min-height: 460px;
+    padding: 125px 9% 78px;
+    text-align: left;
+}
+
+.page-hero.page-hero--states,
+.states-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, .82fr);
+    grid-template-rows: auto auto auto;
+    align-content: center;
+    align-items: center;
+    gap: 12px 5%;
+    min-height: 460px;
+    padding: 125px 9% 78px;
+    text-align: left;
+    background:
+        linear-gradient(90deg, rgba(20, 33, 35, .9), rgba(20, 33, 35, .55)),
+        url("../assets/images/historicalplaces.jpg") center 48% / cover;
+}
+
+section.page-hero--festival {
+    display: flex;
+    min-height: 440px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 125px 9% 80px;
+    text-align: center;
+}
+
+.page-hero.page-hero--states::before,
+.states-heading::before,
+.page-hero::before {
+    content: "";
+    grid-column: 2;
+    grid-row: 1 / 4;
+    width: 100%;
+    min-height: 290px;
+    border: 1px solid rgba(255, 255, 255, .48);
+    border-radius: 46% 46% 12px 12px;
+    background: var(--hero-image) center / cover no-repeat;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, .24);
+}
+
+section.page-hero--heritage {
+    display: flex;
+    min-height: 440px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 125px 10% 78px;
+    text-align: left;
+}
+
+.page-hero.page-hero--states .eyebrow,
+.states-heading .eyebrow,
+.page-hero .eyebrow {
+    grid-column: 1;
+    grid-row: 1;
+    color: #f5c46e;
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+
+section.page-hero--india {
+    grid-template-columns: minmax(260px, .82fr) minmax(0, 1fr);
+    min-height: 480px;
+}
+
+.page-hero.page-hero--states h1,
+.states-heading h1,
+.page-hero h1 {
+    grid-column: 1;
+    grid-row: 2;
+    max-width: 760px;
+    margin: 0;
+    color: #fffaf0;
+    font-size: clamp(2.8rem, 6vw, 5.2rem);
+    line-height: 1.07;
+    text-wrap: balance;
+}
+
+.page-hero.page-hero--states p,
+.states-heading p,
+.page-hero p {
+    grid-column: 1;
+    grid-row: 3;
+    max-width: 650px;
+    margin: 4px 0 0;
+    color: rgba(255, 255, 255, .88);
+    font-size: clamp(1rem, 1.3vw, 1.12rem);
+    line-height: 1.85;
+}
+
+.states-heading::before {
+    --hero-image: url("../assets/images/gateway-of-indiaa.jfif");
+}
+
+.page-hero--festival {
+    display: flex;
+    min-height: 440px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 125px 9% 80px;
+    text-align: center;
+    background:
+        linear-gradient(90deg, rgba(49, 20, 12, .78), rgba(49, 20, 12, .38)),
+        url("../assets/images/holi.jfif") center 48% / cover;
+}
+
+.page-hero--festival::before {
+    display: none;
+}
+
+.page-hero--festival .eyebrow,
+.page-hero--festival h1,
+.page-hero--festival p {
+    grid-column: auto;
+    grid-row: auto;
+    text-align: center;
+}
+
+.page-hero--festival h1 {
+    max-width: 900px;
+    margin: 12px 0;
+}
+
+.page-hero--festival p {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.page-hero--food {
+    --hero-image: url("../assets/images/flavoursofindia.jpg");
+    background: radial-gradient(ellipse at 85% 50%, #fff0d3, #f8f2e7 56%, #f5f7f4);
+}
+
+section.page-hero--food .eyebrow {
+    color: #a64e20;
+}
+
+section.page-hero--food h1 {
+    color: #30251d;
+}
+
+section.page-hero--food p {
+    color: #665449;
+}
+
+.page-hero--culture {
+    --hero-image: url("../assets/images/madhubani-painting.jfif");
+    grid-template-columns: minmax(260px, .82fr) minmax(0, 1fr);
+    background: linear-gradient(120deg, #e8eee8, #faf8f0 58%, #f4e9d6);
+}
+
+section.page-hero--culture {
+    grid-template-columns: minmax(260px, .82fr) minmax(0, 1fr);
+}
+
+.page-hero--culture::before {
+    grid-column: 1;
+    border-radius: 12px 46% 46% 12px;
+}
+
+.page-hero--culture .eyebrow,
+.page-hero--culture h1,
+.page-hero--culture p {
+    grid-column: 2;
+}
+
+.page-hero--culture .eyebrow {
+    color: var(--green);
+}
+
+.page-hero--culture h1 {
+    color: #28382f;
+}
+
+.page-hero--culture p {
+    color: #536159;
+}
+
+.page-hero--heritage {
+    display: flex;
+    min-height: 440px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 125px 10% 78px;
+    background:
+        linear-gradient(90deg, rgba(29, 22, 16, .86), rgba(29, 22, 16, .24)),
+        url("../assets/images/historicalplaces.jpg") center 45% / cover;
+}
+
+.page-hero--heritage::before {
+    display: none;
+}
+
+.page-hero--heritage .eyebrow,
+.page-hero--heritage h1,
+.page-hero--heritage p {
+    grid-column: auto;
+    grid-row: auto;
+}
+
+.page-hero--heritage h1 {
+    max-width: 850px;
+    margin: 12px 0;
+}
+
+.page-hero--heritage p {
+    max-width: 680px;
+}
+
+.page-hero--languages {
+    --hero-image: none;
+    background: linear-gradient(125deg, #f1e8f4, #faf6f0 60%, #e8efe7);
+}
+
+.page-hero--languages::before {
+    content: "अ  বাংলা  தமிழ்";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #765487;
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 4vw, 4rem);
+    font-weight: 700;
+    letter-spacing: .04em;
+    border-radius: 50% 50% 50% 12px;
+    background:
+        radial-gradient(circle at 30% 30%, rgba(255, 255, 255, .9), transparent 58%),
+        linear-gradient(145deg, #e8d8ee, #dce8df);
+}
+
+.page-hero--languages .eyebrow {
+    color: #765487;
+}
+
+.page-hero--languages h1 {
+    color: #352c3c;
+}
+
+.page-hero--languages p {
+    color: #5b5360;
+}
+
+.page-hero--people {
+    --hero-image: url("../assets/images/rabindranath-tagore.jfif");
+    background: linear-gradient(115deg, #f5efe3, #fffaf2 62%, #e8ded0);
+}
+
+.page-hero--people::before {
+    border-radius: 12px 12px 46% 46%;
+    filter: saturate(.78);
+}
+
+.page-hero--people .eyebrow {
+    color: #9c542f;
+}
+
+.page-hero--people h1 {
+    color: #362d28;
+}
+
+.page-hero--people p {
+    color: #5f554d;
+}
+
+.page-hero--india {
+    --hero-image: url("../assets/images/taj-mahall.jfif");
+    grid-template-columns: minmax(260px, .82fr) minmax(0, 1fr);
+    min-height: 480px;
+    background: linear-gradient(120deg, #e8eee8, #faf8f0 58%, #f4e9d6);
+}
+
+.page-hero--india::before {
+    grid-column: 1;
+    border-radius: 12px 46% 46% 12px;
+}
+
+.page-hero--india .eyebrow,
+.page-hero--india h1,
+.page-hero--india p {
+    grid-column: 2;
+}
+
+.page-hero--india .eyebrow {
+    color: var(--green);
+}
+
+.page-hero--india h1 {
+    color: #28382f;
+}
+
+.page-hero--india p {
+    color: #536159;
+}
+
+.project-hero.project-hero--refresh {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(250px, .7fr);
+    align-items: center;
+    gap: 8%;
+    min-height: 460px;
+    padding: 125px 10% 78px;
+    text-align: left;
+    background:
+        linear-gradient(110deg, #172b2b, #203b36 62%, #304739);
+}
+
+.project-hero--refresh::after {
+    content: "";
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    min-height: 280px;
+    border-radius: 50% 50% 12px 12px;
+    background:
+        linear-gradient(180deg, rgba(18, 38, 34, .05), rgba(18, 38, 34, .35)),
+        url("../assets/images/gateway-of-indiaa.jfif") center / cover;
+    box-shadow: 0 22px 55px rgba(0, 0, 0, .28);
+}
+
+.project-hero--refresh .eyebrow,
+.project-hero--refresh h1,
+.project-hero--refresh p {
+    grid-column: 1;
+}
+
+.project-hero--refresh .eyebrow {
+    color: #f5c46e;
+}
+
+.project-hero--refresh h1 {
+    color: #fffaf0;
+}
+
+.project-hero--refresh p {
+    color: rgba(255, 255, 255, .82);
+}
+
+.home-page .hero-section {
+    min-height: 720px;
+}
+
+.home-page .hero-background {
+    background:
+        linear-gradient(90deg, rgba(245, 247, 244, .96) 0%, rgba(245, 247, 244, .84) 45%, rgba(245, 247, 244, .15) 100%),
+        linear-gradient(0deg, var(--bg-dark), transparent 42%),
+        url("../assets/images/taj-mahall.jfif") center / cover no-repeat;
+}
+
+.home-page .hero-content {
+    max-width: 820px;
+}
+
+section.state-hero.state-hero-refresh {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(250px, .78fr);
+    grid-template-rows: auto auto auto auto;
+    align-content: center;
+    align-items: center;
+    gap: 12px 6%;
+    min-height: 520px;
+    padding: 125px 9% 78px;
+    background: linear-gradient(115deg, #172b2b, #203b36 62%, #304739);
+}
+
+.state-hero-refresh::after {
+    content: "";
+    grid-column: 2;
+    grid-row: 1 / 5;
+    min-height: 300px;
+    border: 1px solid rgba(255, 255, 255, .4);
+    border-radius: 46% 46% 12px 12px;
+    background: var(--state-hero-image, url("../assets/images/gateway-of-indiaa.jfif")) center / cover;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, .28);
+}
+
+.state-hero-refresh .state-breadcrumb,
+.state-hero-refresh .state-type-badge,
+.state-hero-refresh h1,
+.state-hero-refresh p {
+    grid-column: 1;
+}
+
+.state-hero-refresh .state-breadcrumb {
+    grid-row: 1;
+    margin-bottom: 4px;
+}
+
+.state-hero-refresh .state-type-badge {
+    grid-row: 2;
+}
+
+.state-hero-refresh h1 {
+    grid-row: 3;
+    margin: 0;
+}
+
+.state-hero-refresh p {
+    grid-row: 4;
+}
+
+@media (max-width: 760px) {
+    section.state-hero.state-hero-refresh {
+        display: flex;
+        min-height: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+        padding: 110px 7% 55px;
+    }
+
+    .state-hero-refresh::after {
+        order: 4;
+        width: 100%;
+        min-height: 220px;
+        margin-top: 8px;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 760px) {
+    section.page-hero.page-hero--states,
+    .states-heading,
+    section.page-hero--food,
+    section.page-hero--culture,
+    section.page-hero--languages,
+    section.page-hero--people,
+    section.page-hero--india,
+    .project-hero.project-hero--refresh {
+        display: flex;
+        min-height: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+        padding: 110px 7% 55px;
+    }
+
+    .page-hero.page-hero--states::before,
+    .states-heading::before,
+    .page-hero--food::before,
+    .page-hero--culture::before,
+    .page-hero--languages::before,
+    .page-hero--people::before,
+    .page-hero--india::before,
+    .project-hero--refresh::after {
+        order: 4;
+        width: 100%;
+        min-height: 220px;
+        border-radius: 20px;
+        margin-top: 8px;
+    }
+
+    .page-hero--culture .eyebrow,
+    .page-hero--culture h1,
+    .page-hero--culture p,
+    .page-hero--india .eyebrow,
+    .page-hero--india h1,
+    .page-hero--india p {
+        order: initial;
+    }
+
+    section.page-hero--festival,
+    section.page-hero--heritage {
+        min-height: 390px;
+        padding: 110px 7% 55px;
+    }
+
+    .page-hero--festival::before,
+    .page-hero--heritage::before {
+        display: none;
+    }
+
+    .home-page .hero-section {
+        min-height: 0;
+        padding: 115px 7% 55px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .page-hero *,
+    .states-heading *,
+    .project-hero * {
+        scroll-behavior: auto;
+    }
+}

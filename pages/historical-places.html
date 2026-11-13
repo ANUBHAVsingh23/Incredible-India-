@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explore India's historical monuments, ancient temples, forts, palaces and architectural heritage.">
+
+    <title>Historical Places of India | Incredible India</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <style>
+        .page-hero {
+            padding: 90px 8% 70px;
+            text-align: center;
+            background:
+                linear-gradient(rgba(245, 247, 244, .84), rgba(245, 247, 244, .93)),
+                url("../assets/images/taj-mahall.jfif") center/cover;
+        }
+
+        .page-hero .eyebrow {
+            color: var(--gold);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: .85rem;
+        }
+
+        .page-hero h1 {
+            color: var(--gold-light);
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin: 15px 0;
+        }
+
+        .page-hero p {
+            max-width: 720px;
+            margin: auto;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .places-section {
+            padding: 60px 8%;
+        }
+
+        .places-intro {
+            max-width: 850px;
+            margin-bottom: 35px;
+        }
+
+        .places-intro h2 {
+            color: var(--gold-light);
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+
+        .places-intro p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .places-toolbar {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .places-toolbar input,
+        .places-toolbar select {
+            width: 100%;
+            padding: 14px 16px;
+            border-radius: 8px;
+            border: 1px solid rgba(212, 175, 55, .3);
+            background: var(--bg-surface);
+            color: var(--text-primary);
+            outline: none;
+            font: inherit;
+        }
+
+        .places-toolbar input:focus,
+        .places-toolbar select:focus {
+            border-color: var(--gold);
+        }
+
+        .places-toolbar select option {
+            background: var(--bg-surface);
+            color: var(--text-primary);
+        }
+
+        .places-result {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .places-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 25px;
+        }
+
+        .place-card {
+            background: var(--bg-surface);
+            border: 1px solid rgba(212, 175, 55, .16);
+            border-radius: 14px;
+            overflow: hidden;
+            transition: transform .3s ease, border-color .3s ease;
+        }
+
+        .place-card:hover {
+            transform: translateY(-7px);
+            border-color: var(--gold);
+        }
+
+        .place-image {
+            width: 100%;
+            height: 205px;
+            display: block;
+            object-fit: cover;
+            background: #252b3b;
+        }
+
+        .place-card-content {
+            padding: 22px;
+        }
+
+        .place-category {
+            display: inline-block;
+            color: var(--gold);
+            font-size: .78rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .place-card h3 {
+            color: var(--gold-light);
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+
+        .place-meta {
+            color: var(--gold);
+            font-size: .85rem;
+            margin-bottom: 12px;
+        }
+
+        .place-card p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            font-size: .92rem;
+        }
+
+        .maps-directions-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 18px;
+            padding: 10px 14px;
+            border-radius: 6px;
+            background: var(--gold);
+            color: #fff;
+            font-size: .88rem;
+            font-weight: 700;
+            transition: background-color .2s ease, transform .2s ease;
+        }
+
+        .maps-directions-link:hover,
+        .maps-directions-link:focus-visible {
+            background: var(--green);
+            transform: translateY(-2px);
+        }
+
+        .maps-directions-link:active {
+            background: var(--maroon);
+            transform: translateY(0);
+        }
+
+        .empty-state {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 50px 20px;
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 768px) {
+            .places-section {
+                padding: 40px 6%;
+            }
+
+            .places-toolbar {
+                grid-template-columns: 1fr;
+            }
+
+            .page-hero {
+                padding: 70px 6%;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .places-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .places-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="../css/landing-heroes.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="../index.html" class="brand">
+                <span class="brand-icon">✦</span>
+                <span>INCREDIBLE INDIA</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <nav class="navigation" id="navigation">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="states.html" class="nav-link">States</a>
+                <a href="festivals.html" class="nav-link">Festivals</a>
+                <a href="food.html" class="nav-link">Food</a>
+                <a href="art-culture.html" class="nav-link">Art &amp; Culture</a>
+                <a href="historical-places.html" class="nav-link">Heritage</a>
+                <a href="languages.html" class="nav-link">Languages</a>
+                <a href="personalities.html" class="nav-link">Personalities</a>
+                <a href="about-india.html" class="nav-link">About India</a>
+                <a href="about-project.html" class="nav-link">About Project</a>
+            </nav>
+            <a href="../index.html#explore-map" class="header-button">Explore India ↗</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="page-hero page-hero--heritage">
+            <span class="eyebrow">History • Architecture • Heritage</span>
+
+            <h1>Historical Places of India</h1>
+
+            <p>
+                Travel through centuries of Indian history.
+                Explore magnificent forts, ancient temples, royal palaces,
+                historic monuments and architectural wonders.
+            </p>
+        </section>
+
+        <!-- Historical Places Directory -->
+        <section class="places-section">
+
+            <div class="places-intro">
+                <h2>Explore India's Timeless Heritage</h2>
+
+                <p>
+                    From ancient civilizations to magnificent empires,
+                    India's historical landmarks preserve stories of
+                    architecture, art, spirituality and cultural evolution.
+                </p>
+            </div>
+
+            <div class="places-toolbar">
+
+                <input
+                    type="search"
+                    id="placesSearch"
+                    placeholder="Search historical places..."
+                    aria-label="Search historical places"
+                >
+
+                <select
+                    id="placesStateFilter"
+                    aria-label="Filter by state"
+                >
+                    <option value="">All States</option>
+                </select>
+
+                <select
+                    id="placesCategoryFilter"
+                    aria-label="Filter by category"
+                >
+                    <option value="">All Categories</option>
+                </select>
+
+            </div>
+
+            <p class="places-result" id="placesResult">
+                Loading historical places...
+            </p>
+
+            <div class="places-grid" id="placesContainer">
+                <!-- Historical place cards generated by JavaScript -->
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <h3>Incredible India</h3>
+
+            <p>
+                Discover the diversity, traditions and timeless heritage of India.
+            </p>
+
+            <p class="footer-bottom">
+                © 2026 Incredible India – 3D Cultural Explorer
+            </p>
+        </div>
+    </footer>
+
+    <script src="../js/directory.js"></script>
+    <script type="module" src="../js/main.js"></script>
+
+</body>
+</html>

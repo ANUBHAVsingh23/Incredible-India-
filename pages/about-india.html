@@ -1,0 +1,528 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Discover India, its geography, history, culture, national symbols and incredible diversity.">
+
+    <title>About India | Incredible India</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <style>
+        .page-hero {
+            min-height: 420px;
+            padding: 90px 8%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            background:
+                linear-gradient(rgba(245, 247, 244, .84), rgba(245, 247, 244, .93)),
+                url("../assets/images/taj-mahall.jfif") center/cover;
+        }
+
+        .eyebrow {
+            color: var(--gold);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: .85rem;
+        }
+
+        .page-hero h1 {
+            color: var(--gold-light);
+            font-size: clamp(2.5rem, 6vw, 4.2rem);
+            margin: 15px 0;
+        }
+
+        .page-hero p {
+            max-width: 780px;
+            margin: 0 auto;
+            color: var(--text-secondary);
+            line-height: 1.9;
+        }
+
+        .india-section {
+            padding: 65px 8%;
+        }
+
+        .section-heading {
+            margin-bottom: 30px;
+        }
+
+        .section-heading h2 {
+            color: var(--gold-light);
+            font-size: clamp(1.7rem, 4vw, 2.5rem);
+            margin-bottom: 12px;
+        }
+
+        .section-heading p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            max-width: 850px;
+        }
+
+        .india-intro {
+            max-width: 950px;
+            color: var(--text-secondary);
+            line-height: 1.9;
+            font-size: 1.02rem;
+        }
+
+        .india-facts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 20px;
+            margin-top: 35px;
+        }
+
+        .fact-card {
+            padding: 25px;
+            border-radius: 14px;
+            background: var(--bg-surface);
+            border: 1px solid rgba(212, 175, 55, .2);
+        }
+
+        .fact-card span {
+            display: block;
+            color: var(--gold);
+            font-size: .85rem;
+            margin-bottom: 12px;
+        }
+
+        .fact-card h3 {
+            color: var(--text-primary);
+            font-size: 1.2rem;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 22px;
+        }
+
+        .feature-card {
+            padding: 25px;
+            background: var(--bg-surface);
+            border: 1px solid rgba(212, 175, 55, .16);
+            border-radius: 14px;
+            transition: transform .3s ease, border-color .3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            color: var(--gold-light);
+            margin-bottom: 12px;
+        }
+
+        .feature-card p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .feature-card a {
+            display: inline-block;
+            margin-top: 15px;
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .symbols-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 18px;
+        }
+
+        .symbol-card {
+            padding: 22px;
+            border-radius: 12px;
+            background: var(--bg-surface);
+            border: 1px solid rgba(212, 175, 55, .15);
+        }
+
+        .symbol-card h3 {
+            color: var(--gold-light);
+            margin-bottom: 8px;
+        }
+
+        .symbol-card p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .india-quote {
+            padding: 65px 8%;
+            text-align: center;
+            background: rgba(255, 255, 255, .025);
+        }
+
+        .india-quote blockquote {
+            max-width: 850px;
+            margin: auto;
+            color: var(--gold-light);
+            font-size: clamp(1.3rem, 3vw, 2rem);
+            line-height: 1.6;
+        }
+
+        .india-quote p {
+            margin-top: 18px;
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 768px) {
+            .page-hero {
+                padding: 70px 6%;
+            }
+
+            .india-section {
+                padding: 45px 6%;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="../css/landing-heroes.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="../index.html" class="brand">
+                <span class="brand-icon">✦</span>
+                <span>INCREDIBLE INDIA</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <nav class="navigation" id="navigation">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="states.html" class="nav-link">States</a>
+                <a href="festivals.html" class="nav-link">Festivals</a>
+                <a href="food.html" class="nav-link">Food</a>
+                <a href="art-culture.html" class="nav-link">Art &amp; Culture</a>
+                <a href="historical-places.html" class="nav-link">Heritage</a>
+                <a href="languages.html" class="nav-link">Languages</a>
+                <a href="personalities.html" class="nav-link">Personalities</a>
+                <a href="about-india.html" class="nav-link">About India</a>
+                <a href="about-project.html" class="nav-link">About Project</a>
+            </nav>
+            <a href="../index.html#explore-map" class="header-button">Explore India ↗</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="page-hero page-hero--india">
+            <span class="eyebrow">One Nation • Many Cultures</span>
+
+            <h1>Discover Incredible India</h1>
+
+            <p>
+                A land of ancient civilizations, diverse landscapes,
+                remarkable traditions and countless stories.
+                Explore the history, geography and cultural richness
+                of one of the world's most diverse countries.
+            </p>
+        </section>
+
+        <!-- Introduction -->
+        <section class="india-section">
+            <div class="section-heading">
+                <h2>Welcome to India</h2>
+                <p>Discover the country and its remarkable diversity.</p>
+            </div>
+
+            <p class="india-intro">
+                India, officially the Republic of India, is a country in
+                South Asia. It is known for its ancient civilizations,
+                diverse languages, religions, cuisines, festivals,
+                art forms and architectural heritage. From the Himalayan
+                mountains in the north to tropical coastlines in the south,
+                India's geography and cultural traditions create an
+                extraordinary variety of experiences.
+            </p>
+
+            <div class="india-facts">
+
+                <div class="fact-card">
+                    <span>CAPITAL</span>
+                    <h3>New Delhi</h3>
+                </div>
+
+                <div class="fact-card">
+                    <span>REGION</span>
+                    <h3>South Asia</h3>
+                </div>
+
+                <div class="fact-card">
+                    <span>INDEPENDENCE</span>
+                    <h3>15 August 1947</h3>
+                </div>
+
+                <div class="fact-card">
+                    <span>REPUBLIC DAY</span>
+                    <h3>26 January 1950</h3>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Geography -->
+        <section class="india-section">
+            <div class="section-heading">
+                <h2>Geography of India</h2>
+                <p>
+                    Explore the natural landscapes that shape India's
+                    geography and regional diversity.
+                </p>
+            </div>
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+                    <div class="feature-icon">🏔️</div>
+                    <h3>The Himalayas</h3>
+                    <p>
+                        The northern mountain ranges include some of the
+                        world's highest peaks and influence the climate
+                        and rivers of the subcontinent.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🌊</div>
+                    <h3>Coastal Regions</h3>
+                    <p>
+                        India's coastline along the Arabian Sea, Bay of Bengal
+                        and Indian Ocean is home to diverse communities,
+                        ecosystems and maritime traditions.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🏜️</div>
+                    <h3>Deserts and Plains</h3>
+                    <p>
+                        From the Thar Desert to the fertile Indo-Gangetic
+                        plains, India's landscapes support varied ways
+                        of life and agriculture.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🌳</div>
+                    <h3>Forests and Biodiversity</h3>
+                    <p>
+                        Tropical forests, grasslands, wetlands and wildlife
+                        habitats contribute to India's remarkable ecological
+                        diversity.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Culture -->
+        <section class="india-section">
+            <div class="section-heading">
+                <h2>A Land of Cultural Diversity</h2>
+                <p>
+                    Every region contributes something unique to India's
+                    cultural identity.
+                </p>
+            </div>
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+                    <div class="feature-icon">🎉</div>
+                    <h3>Festivals</h3>
+                    <p>
+                        Celebrate Diwali, Holi, Eid, Christmas, Baisakhi,
+                        Pongal, Onam and many other regional traditions.
+                    </p>
+                    <a href="festivals.html">Explore Festivals →</a>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🍛</div>
+                    <h3>Regional Cuisine</h3>
+                    <p>
+                        Discover India's culinary diversity through
+                        regional recipes, spices and traditional dishes.
+                    </p>
+                    <a href="food.html">Explore Cuisine →</a>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Art and Culture</h3>
+                    <p>
+                        Experience classical dances, folk performances,
+                        paintings, handicrafts and musical traditions.
+                    </p>
+                    <a href="art-culture.html">Explore Art & Culture →</a>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🗣️</div>
+                    <h3>Languages</h3>
+                    <p>
+                        Discover India's linguistic diversity, regional
+                        languages, scripts and literary traditions.
+                    </p>
+                    <a href="languages.html">Explore Languages →</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- National Symbols -->
+        <section class="india-section">
+            <div class="section-heading">
+                <h2>National Symbols of India</h2>
+                <p>
+                    Symbols that represent India's heritage, natural
+                    identity and national spirit.
+                </p>
+            </div>
+
+            <div class="symbols-grid">
+
+                <article class="symbol-card">
+                    <h3>🇮🇳 National Flag</h3>
+                    <p>Tricolour – saffron, white and green with the Ashoka Chakra.</p>
+                </article>
+
+                <article class="symbol-card">
+                    <h3>🦚 National Bird</h3>
+                    <p>Indian Peacock.</p>
+                </article>
+
+                <article class="symbol-card">
+                    <h3>🐅 National Animal</h3>
+                    <p>Bengal Tiger.</p>
+                </article>
+
+                <article class="symbol-card">
+                    <h3>🌸 National Flower</h3>
+                    <p>Lotus.</p>
+                </article>
+
+                <article class="symbol-card">
+                    <h3>🐬 National Aquatic Animal</h3>
+                    <p>Ganges River Dolphin.</p>
+                </article>
+
+                <article class="symbol-card">
+                    <h3>🎵 National Anthem</h3>
+                    <p>Jana Gana Mana.</p>
+                </article>
+
+                <article class="symbol-card">
+                    <h3>🎶 National Song</h3>
+                    <p>Vande Mataram.</p>
+                </article>
+
+                <article class="symbol-card">
+                    <h3>🌳 National Tree</h3>
+                    <p>Indian Banyan.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Heritage -->
+        <section class="india-section">
+            <div class="section-heading">
+                <h2>History and Heritage</h2>
+                <p>
+                    Explore the historical landmarks and civilizations
+                    that have shaped India's past.
+                </p>
+            </div>
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+                    <div class="feature-icon">🏛️</div>
+                    <h3>Ancient Civilizations</h3>
+                    <p>
+                        Explore the Indus Valley Civilization and the
+                        early historical traditions of the Indian subcontinent.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🏰</div>
+                    <h3>Forts and Palaces</h3>
+                    <p>
+                        Discover royal architecture, historic forts,
+                        palaces and the stories of India's kingdoms.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🛕</div>
+                    <h3>Temples and Monuments</h3>
+                    <p>
+                        Explore remarkable religious architecture,
+                        sculptures and historic monuments.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🗺️</div>
+                    <h3>States and Territories</h3>
+                    <p>
+                        Discover the distinct history and heritage
+                        of India's 28 states and 8 union territories.
+                    </p>
+                    <a href="states.html">Explore All States →</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Quote -->
+        <section class="india-quote">
+            <blockquote>
+                "Unity in Diversity" – a phrase that captures
+                the spirit of India's many cultures and traditions.
+            </blockquote>
+
+            <p>Celebrating the many identities that make India incredible.</p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <h3>Incredible India</h3>
+
+            <p>
+                Discover the diversity, traditions and timeless heritage of India.
+            </p>
+
+            <p class="footer-bottom">
+                © 2026 Incredible India – 3D Cultural Explorer
+            </p>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,390 @@
+
+/* =========================================================
+   INCREDIBLE INDIA
+   ANIMATIONS STYLESHEET
+   ========================================================= */
+
+
+/* ================= KEYFRAMES ================= */
+
+/* Fade In */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Fade Up */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Fade Down */
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Fade Left */
+
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* Fade Right */
+
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translateX(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* Floating Animation */
+
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+
+/* Golden Glow */
+
+@keyframes goldenGlow {
+    0%, 100% {
+        box-shadow: 0 0 10px rgba(245, 185, 66, 0.1);
+    }
+
+    50% {
+        box-shadow: 0 0 30px rgba(245, 185, 66, 0.35);
+    }
+}
+
+
+/* Pulse */
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.08);
+        opacity: 0.75;
+    }
+}
+
+
+/* Rotate */
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Shimmer */
+
+@keyframes shimmer {
+    from {
+        background-position: -200% center;
+    }
+
+    to {
+        background-position: 200% center;
+    }
+}
+
+
+/* ================= HERO ANIMATIONS ================= */
+
+.hero-label {
+    animation: fadeDown 0.8s ease both;
+}
+
+.hero-content h1 {
+    animation: fadeUp 1s ease 0.15s both;
+}
+
+.hero-content > p {
+    animation: fadeUp 1s ease 0.3s both;
+}
+
+.hero-buttons {
+    animation: fadeUp 1s ease 0.45s both;
+}
+
+.hero-stats {
+    animation: fadeUp 1s ease 0.6s both;
+}
+
+
+/* ================= BRAND ANIMATION ================= */
+
+.brand-icon {
+    display: inline-block;
+    animation: floating 4s ease-in-out infinite;
+    transition: color 0.3s ease;
+}
+
+.brand:hover .brand-icon {
+    color: var(--gold-light);
+    filter: drop-shadow(0 0 10px #f5b942);
+}
+
+
+/* ================= BUTTON ANIMATIONS ================= */
+
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: -120%;
+
+    width: 80%;
+    height: 100%;
+
+    background: linear-gradient(
+        110deg,
+        transparent,
+        rgba(255, 255, 255, 0.35),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+
+    transition: left 0.6s ease;
+}
+
+.btn-primary:hover::before {
+    left: 140%;
+}
+
+
+/* ================= DISCOVERY CARD ANIMATIONS ================= */
+
+.discovery-card {
+    animation: fadeUp 0.8s ease both;
+}
+
+.discovery-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.discovery-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.discovery-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.discovery-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.discovery-card:hover img {
+    filter: brightness(1.12);
+}
+
+
+/* ================= SECTION ANIMATIONS ================= */
+
+.section-heading {
+    animation: fadeUp 0.8s ease both;
+}
+
+.about-content {
+    animation: fadeLeft 0.9s ease both;
+}
+
+
+/* ================= GOLDEN DECORATIVE EFFECTS ================= */
+
+.hero-content h1 span {
+    background-size: 200% auto;
+
+    animation: shimmer 5s linear infinite;
+}
+
+.section-label {
+    transition: color 0.3s ease;
+}
+
+.section-label:hover {
+    color: var(--gold-light);
+    text-shadow: 0 0 12px rgba(245, 185, 66, 0.5);
+}
+
+
+/* ================= MAP ANIMATIONS ================= */
+
+.map-container {
+    animation: fadeIn 1s ease both;
+}
+
+.map-container:hover {
+    border-color: rgba(245, 185, 66, 0.55);
+
+    box-shadow:
+        0 0 35px rgba(245, 185, 66, 0.08),
+        inset 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+.loading-spinner {
+    animation: rotate 1s linear infinite;
+}
+
+.status-dot {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+
+/* ================= STATE PANEL ANIMATION ================= */
+
+.state-panel {
+    transition:
+        border-color 0.35s ease,
+        background 0.35s ease;
+}
+
+.state-details {
+    animation: fadeUp 0.4s ease both;
+}
+
+
+/* ================= HEADER ANIMATION ================= */
+
+.site-header {
+    animation: fadeDown 0.6s ease both;
+}
+
+.nav-link {
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.nav-link:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ================= FOOTER ANIMATION ================= */
+
+.footer-links a {
+    transition:
+        color 0.3s ease,
+        padding-left 0.3s ease;
+}
+
+
+/* ================= SCROLL REVEAL ================= */
+
+/*
+   Add the class "reveal" to elements that should
+   animate when they enter the viewport.
+
+   JavaScript will add "visible" when appropriate.
+*/
+
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ================= IMAGE TRANSITIONS ================= */
+
+img {
+    transition: filter 0.4s ease;
+}
+
+
+/* ================= REDUCED MOTION ================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+
+        scroll-behavior: auto !important;
+
+        transition-duration: 0.01ms !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+
+}

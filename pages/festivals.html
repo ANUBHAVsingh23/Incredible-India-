@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explore India's colourful festivals, traditions and celebrations across different states and cultures.">
+
+    <title>Indian Festivals | Incredible India</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <style>
+        .page-hero {
+            padding: 90px 8% 70px;
+            text-align: center;
+            background:
+                linear-gradient(rgba(245, 247, 244, .84), rgba(245, 247, 244, .93)),
+                url("../assets/images/taj-mahall.jfif") center/cover;
+        }
+
+        .page-hero .eyebrow {
+            color: var(--gold);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: .85rem;
+        }
+
+        .page-hero h1 {
+            color: var(--gold-light);
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin: 15px 0;
+        }
+
+        .page-hero p {
+            max-width: 720px;
+            margin: auto;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .festival-section {
+            padding: 60px 8%;
+        }
+
+        .festival-toolbar {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 35px;
+        }
+
+        .festival-toolbar input,
+        .festival-toolbar select {
+            width: 100%;
+            padding: 14px 16px;
+            border-radius: 8px;
+            border: 1px solid rgba(212, 175, 55, .3);
+            background: var(--bg-surface);
+            color: var(--text-primary);
+            outline: none;
+            font: inherit;
+        }
+
+        .festival-toolbar input:focus,
+        .festival-toolbar select:focus {
+            border-color: var(--gold);
+        }
+
+        .festival-toolbar select option {
+            background: var(--bg-surface);
+            color: var(--text-primary);
+        }
+
+        .festival-result {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .festivals-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 25px;
+        }
+
+        .festival-card {
+            background: var(--bg-surface);
+            border: 1px solid rgba(212, 175, 55, .16);
+            border-radius: 14px;
+            overflow: hidden;
+            transition: transform .3s ease, border-color .3s ease;
+        }
+
+        .festival-card:hover {
+            transform: translateY(-7px);
+            border-color: var(--gold);
+        }
+
+        .festival-image {
+            height: 190px;
+            width: 100%;
+            object-fit: cover;
+            display: block;
+            background: #252b3b;
+        }
+
+        .festival-card-content {
+            padding: 22px;
+        }
+
+        .festival-category {
+            display: inline-block;
+            color: var(--gold);
+            font-size: .78rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .festival-card h3 {
+            color: var(--gold-light);
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+        }
+
+        .festival-meta {
+            color: var(--gold);
+            font-size: .85rem;
+            margin-bottom: 12px;
+        }
+
+        .festival-card p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            font-size: .92rem;
+        }
+
+        .empty-state {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 50px 20px;
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 768px) {
+            .festival-section {
+                padding: 40px 6%;
+            }
+
+            .festival-toolbar {
+                grid-template-columns: 1fr;
+            }
+
+            .festivals-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .page-hero {
+                padding: 70px 6%;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .festivals-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .festivals-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="../css/landing-heroes.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="../index.html" class="brand">
+                <span class="brand-icon">✦</span>
+                <span>INCREDIBLE INDIA</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <nav class="navigation" id="navigation">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="states.html" class="nav-link">States</a>
+                <a href="festivals.html" class="nav-link">Festivals</a>
+                <a href="food.html" class="nav-link">Food</a>
+                <a href="art-culture.html" class="nav-link">Art &amp; Culture</a>
+                <a href="historical-places.html" class="nav-link">Heritage</a>
+                <a href="languages.html" class="nav-link">Languages</a>
+                <a href="personalities.html" class="nav-link">Personalities</a>
+                <a href="about-india.html" class="nav-link">About India</a>
+                <a href="about-project.html" class="nav-link">About Project</a>
+            </nav>
+            <a href="../index.html#explore-map" class="header-button">Explore India ↗</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="page-hero page-hero--festival">
+            <span class="eyebrow">Celebrations of India</span>
+
+            <h1>Festivals of India</h1>
+
+            <p>
+                Experience the colours, traditions and celebrations of India.
+                From grand religious festivals to regional harvest celebrations,
+                discover the cultural spirit that brings communities together.
+            </p>
+        </section>
+
+        <!-- Festival Directory -->
+        <section class="festival-section">
+
+            <div class="festival-toolbar">
+
+                <input
+                    type="search"
+                    id="festivalSearch"
+                    placeholder="Search festivals..."
+                    aria-label="Search festivals"
+                >
+
+                <select id="festivalStateFilter" aria-label="Filter by state">
+                    <option value="">All States</option>
+                </select>
+
+                <select id="festivalCategoryFilter" aria-label="Filter by category">
+                    <option value="">All Categories</option>
+                </select>
+
+            </div>
+
+            <p class="festival-result" id="festivalResult">
+                Loading festivals...
+            </p>
+
+            <div class="festivals-grid" id="festivalsContainer">
+                <!-- Festival cards generated by JavaScript -->
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <h3>Incredible India</h3>
+            <p>Discover the diversity, traditions and timeless heritage of India.</p>
+
+            <p class="footer-bottom">
+                © 2026 Incredible India – 3D Cultural Explorer
+            </p>
+        </div>
+    </footer>
+
+    <script src="../js/festivals.js"></script>
+    <script type="module" src="../js/main.js"></script>
+
+</body>
+</html>
